@@ -1,0 +1,36 @@
+<style>
+      <meta charset="utf-8">
+      
+      body {
+				background-color: #c8ced1;
+				margin: 0 5%;
+				font-family: sans-serif;
+				}
+
+			head {
+				background-color: #c8ced1;
+				font-family: serif;
+				text-align: center;
+				margin-top: 30px;
+				}
+			h2 {
+				background-color: #c8ced1;
+				text-align: left;
+				font-family: serif;
+				margin-top: 30px;
+				font-size: 1.2em;
+				}
+			footer {
+				background-color: #c8ced1;
+				text-align: center;
+				font-family: serif;
+				margin-bottom: 30px;
+				}
+			iframe {
+				text-align:center;
+				background-color: #c8ced1;
+				}
+			img	{
+				max-width: 90%
+				}
+</style>
