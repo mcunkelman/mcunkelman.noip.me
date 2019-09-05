@@ -1,6 +1,6 @@
 <style>
       <meta charset="utf-8">
-      
+
       body {
 				background-color: #c8ced1;
 				margin: 0 5%;
@@ -29,8 +29,14 @@
 			iframe {
 				text-align:center;
 				background-color: #c8ced1;
-				}
+				width: 90%;
+        Height: 540px;}
 			img	{
 				max-width: 90%
 				}
+      .tab {
+        margin-left: 40px;
+      }
+
+
 </style>
