@@ -37,6 +37,11 @@
       .tab {
         margin-left: 40px;
       }
+      p {
+        text-align: left;
+        font-family: serif;
+        max-width: 90%;
+      }
 
 
 </style>
