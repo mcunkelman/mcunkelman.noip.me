@@ -1,42 +1,49 @@
+
 <style>
-      <meta charset="utf-8">
 
       body {
 				background-color: #c8ced1;
 				margin: 0 5%;
+        font-family: serif;
 				}
 
 			head {
 				background-color: #c8ced1;
 				text-align: center;
 				margin-top: 30px;
+        font-family: serif;
 				}
 			h2 {
 				background-color: #c8ced1;
 				text-align: left;
 				margin-top: 30px;
 				font-size: 1.2em;
+        font-family: serif;
 				}
 			footer {
 				background-color: #c8ced1;
 				text-align: center;
 				margin-bottom: 30px;
+        font-family: serif;
 				}
 			iframe {
 				text-align:center;
 				background-color: #c8ced1;
 				width: 90%;
-        Height: 540px;}
+        Height: 540px;
+        font-family: serif;
+        }
 			img	{
 				max-width: 90%
 				}
       .tab {
         margin-left: 40px;
         font-family: serif;
-      }
+        }
       p {
         text-align: left;
         max-width: 90%;
+        font-family: serif;
       }
 
 
