@@ -37,6 +37,7 @@
 			img	{
 				max-width: 90%;
         text-align:center;
+        align-items: center;
 				max-height:1000px;
 				}
       .tab {
@@ -51,6 +52,7 @@
       a {
         text-align: center;
         max-width: 90%;
+        align-items: center;
 
       }
 
