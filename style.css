@@ -53,8 +53,11 @@
         text-align: center;
         max-width: 90%;
         align-items: center;
-
       }
-
+      p2 {
+        text-align: center;
+        max-width: 90%;
+        font-family: serif;
+      }
 
 </style>
