@@ -9,23 +9,165 @@
   mcunkelman.noip.me
 </title>
 
-<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<style>
+body {
+  background-color: #2b333e;
+}
+button {
+  color:#274B87 ;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#container {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tab {
+  width: 90%;
+  background-color: #2b333e;
+}
 
-<head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+.tab button {
+  background-color: #041E42;
+  color: #c4cee1;
+  font-weight: bold;
+  font-size: 16px;
+  float: left;
+  width: 15%;
+  max-width: 200px;
+  min-width: 100px;
+  outline: 10px;
+  outline-color: #2b333e;
+  cursor: pointer;
+  padding: 8px 0px;
+  transition: 0.2s;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #c4cee1;
+  color: #041E42;
+}
+
+/* Change background color of buttons on selection */
+/* https://www.w3schools.com/colors/colors_picker.asp */
+.tab button.active {
+  background-color: #02285c;
+  color: #bababa;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  background-color: #36455a;
+  color: #fff;
+  padding: 2% 12px;
+  /* border: 1px solid #bbb; */
+  border-top: none;
+}
 
 
-<!-- Going to try using tabs -->
-<h2>
-<button class="tablinks" onfocus="opencity(event, 'About Me')" id="defaultOpen">About Me</button>
-<button class="tablinks" onfocus="opencity(event, 'Travel')">Travel</button>
-</h2>
+</style>
+
+<!-- Stealing all of this from smannPSU -->
+<div class="tab" style="font-family:arial">
+  <button class="tablinks" onclick="openCity(event, 'About Me')" id="defaultOpen">About Me</button>
+  <button class="tablinks" onclick="openCity(event, 'Travel')">Travel</button>
+  <button class="tablinks" onclick="openCity(event, 'Professional')">Professional</button>
+  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'Other')">Other</button>
+</div>
 
 
 
+<!-- Tab content -->
+		<div id="About Me" class="tabcontent" style="font-family:arial">
+			<p>
+        Hello there! My name is Matthew but everyone calls me Matt.
+        <br>
+        This is version 3 of my website. I am sure there will be more.....
+        <br>
+        I originally built this site while I was laid off,
+        <br>
+        1. Because I was curious on how a website worked. (Everyone said you had to spend money on it)
+        <br>
+        2. Because I am stubborn and told people I was going to do it.
+        <br>
+        3. Because it turns out I can.
+        <br>
+        <br>
+        <br>
+        I think the items I have chosen here say a lot about me but I wil add a bit more here.
+        I live with my wonderful girlfriend Zannah and our dog's, Archer and Reka, in the house we bought in the Lawrenceville neighborhood of Pittsburgh.
+        I have a bachelors degree in Mechanical Engineering from Penn State.
+        I have spent most of my career in the oil and gas industry, but have recently transitioned to something a bit more modern.
+        I am currently an Autonomous Systems Engineer for Uber ATG (and I absolutely love it)
+        Growing up I hated computers, I could never get them to do what I wanted,
+        or they were just to complex for me to understand what they were doing. I have been working on that,
+        and because of Zan; I have built my own server and use it to host this page.
+        <br>
+        <br>
+        <br>
+        There are a lot of things on my mind that I want to accomplish, I am still working on figuring out how to get them all done, but stay tuned. If there is one thing I have leared in my life, its to always bet on myself.
+        <br>
+        There is a long term plan for this site (well more like an idea of a plan, but for right now I am just putting what I have out there.)
+      </p>
+		</div>
+
+    <div id="Travel" class="tabcontent" style="font-family:arial">
+	  	<p>Put Education description here</p>
+		</div>
+
+		<div id="Professional" class="tabcontent" style="font-family:arial">
+	  	<p>Put About Me description here</p>
+			<img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" height="250">
+		</div>
+
+		<div id="Other" class="tabcontent" style="font-family:arial">
+	  	<p>Put Career description here</p>
+		</div>
 
 
+    <script>
+			function openCity(evt, cityName) {
+	  		// Declare all variables
+	  		var i, tabcontent, tablinks;
 
-</body>
+	  		// Get all elements with class="tabcontent" and hide them
+	  		tabcontent = document.getElementsByClassName("tabcontent");
+	  		for (i = 0; i < tabcontent.length; i++) {
+	    		tabcontent[i].style.display = "none";
+	  		}
+
+	  		// Get all elements with class="tablinks" and remove the class "active"
+	  		tablinks = document.getElementsByClassName("tablinks");
+	  		for (i = 0; i < tablinks.length; i++) {
+	    		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  		}
+
+	  		// Show the current tab, and add an "active" class to the button that opened the tab
+	  		document.getElementById(cityName).style.display = "block";
+	  		evt.currentTarget.className += " active";
+			}
+		</script>
+
+    <script>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+
+    <!--Open "Home" tab by default (defaultOpen in Tab Links above)-->
+
+
+</html>
