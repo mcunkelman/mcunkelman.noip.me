@@ -25,16 +25,16 @@
         color: #fff;
         background-color: #2b333e;
         }
-      a {
-        text-align: center;
-        max-width: 90%;
-        align-items: center;
-        background-color: #2b333e;
-        }
       p2 {
         text-align: center;
         max-width: 98%;
         font-family: serif;
+        background-color: #2b333e;
+        }
+      a {
+        text-align: center;
+        max-width: 90%;
+        align-items: center;
         background-color: #2b333e;
         }
       body {
