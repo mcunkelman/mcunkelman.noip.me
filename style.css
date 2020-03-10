@@ -27,6 +27,7 @@
         max-width: 98%;
         font-family: serif;
         background-color: #2b333e;
+        margin-top: 30px;
         }
       a {
         text-align: center;
@@ -58,6 +59,7 @@
         text-align:center;
         align-items: center;
 				max-height:1000px;
+        background-color: #2b333e;
 				}
       div {
         display: flex;
