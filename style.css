@@ -40,6 +40,9 @@
         background-color: #36455a;
         color: #fff;
       }
+      c {
+        text-align: left;
+      }
       body {
         background-color: #2b333e;
         margin: 0 5px;
@@ -107,3 +110,8 @@
         padding: 2% 12px;
         border-top: none;
         }
+      .box {
+        display: flex;
+        align-items: center;
+        background-color: #36455a;
+      }
