@@ -4,6 +4,12 @@
         font-family: serif;
         color: #c4cee1;
         }
+      navbar {
+        align-items: stretch;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        display: flex;
+        }
 			h2 {
 				background-color: #2b333e;
 				text-align: left;
@@ -39,10 +45,10 @@
       b {
         background-color: #36455a;
         color: #fff;
-      }
+        }
       c {
         text-align: left;
-      }
+        }
       body {
         background-color: #2b333e;
         margin: 0 5px;
@@ -73,11 +79,11 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: #2b333e;
+        background-color: #041e42;
         }
       .tab {
-        width: 90%;
-        background-color: #2b333e;
+        /* width: 100%; */
+        background-color: #041e42;
         font-family: serif;
         }
       .tab button {
@@ -94,6 +100,7 @@
         cursor: pointer;
         padding: 8px 0px;
         transition: 0.2s;
+        display: block;
         }
       .tab button:hover {
         background-color: #c4cee1;
