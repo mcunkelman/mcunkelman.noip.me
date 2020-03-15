@@ -10,38 +10,39 @@
                       margin: 0;
                       padding: 0;
                 }
-                /*.nav {
-                  align-items: stretch;
+                .nav {
+                  /* align-items: stretch;
                   flex-flow: row nowrap;
                   justify-content: space-between;
                   display: flex;
-
-                }*/
+                  */
+                }
 
                 .navbar {
                       background-color: #041e42; /* This is Penn State Blue */
                       Height: 60px;
                       margin: 0;
-                      /*flex-flow: row nowrap;
+                      flex-flow: row nowrap;
                       overflow: hidden;
                       position: relative;
-                      */
 
                 }
                 .navbar button {
                       background-color: #041e42; /* This is PSU blue */
                       color: #ebedf2; /* Super Light Grey that will invert to the box color during hover */
-                      height: 60px; /* Set height to fill the nav */
+                      height: 100%; /* Set height to fill the nav */
                       display: block;
                       float: left;
                       transition: 0.2s;
                       width: 8%;
                       min-width: 100px;
                       padding: 12px 12px;
-                      border-width: 1px;
+                      border-width: 2px;
                       border-color: #595962;
                       font-size: 15px;
                       cursor: pointer;
+                      border-top-left-radius: 1px;
+                      border-top-right-radius: 15px;
 
                 }
                 .navbar button:hover:not([disabled]) {
@@ -71,7 +72,8 @@
                 .navcontent {
                   background-color: #36455a; /* medium grey from the logo */
                   color: #c4cee1; /* light grey */
-                  border-top: none;
+                  border-top: 2px;
+                  border-color: #595962;
                   padding: 6px 15px;
                 }
 
@@ -81,6 +83,9 @@
   <head> <!-- Use this to laod relevent files -->
     <title>New testing</title>
     <link rel ="icon" href ="./logos/logo_initial_5.ico" type = "image/x-icon">
+    <style>
+			html {visibility:hidden}
+		</style>
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/FortAwesome/Font-Awesome/master/css/all.css" media="screen"/>
   </head>
 
@@ -118,15 +123,46 @@
 				</button>
 
 <!-- Adding the mcunkelman logo -->
-        <button class="navlogo" disabled style="width:350px;height:60px;max-width:35%;min-width:100px;">
-          <img src="./logos/mcunkelman_f.png" alt="[mcunkelman]" style="max-height:40px;max-width:99%;">
+        <button class="navlogo" disabled style="width:300px;height:100%;max-width:35%;min-width:100px;">
+          <img src="./logos/mcunkelman_f.png" alt="[mcunkelman]" style="max-height:35px;max-width:99%;">
         </button>
 
       </div>
 
 <!-- This is where I will populate the content for the different tabs -->
       <div id="Home" class="navcontent">
-        Home stuff
+
+        <p>
+          Hello there! My name is Matthew but everyone calls me Matt.
+          <br>
+          This is version 3 of my website. I am sure there will be more.....
+          <br>
+          I originally built this site while I was laid off,
+          <br>
+          1. Because I was curious on how a website worked. (Everyone said you had to spend money on it)
+          <br>
+          2. Because I am stubborn and told people I was going to do it.
+          <br>
+          3. Because it turns out I can.
+          <br>
+          <br>
+          <br>
+          I think the items I have chosen here say a lot about me but I wil add a bit more here.
+          I live with my wonderful girlfriend Zannah and our dog's, Archer and Reka, in the house we bought in the Lawrenceville neighborhood of Pittsburgh.
+          I have a bachelors degree in Mechanical Engineering from Penn State.
+          I have spent most of my career in the oil and gas industry, but have recently transitioned to something a bit more modern.
+          I am currently an Autonomous Systems Engineer for Uber ATG (and I absolutely love it)
+          Growing up I hated computers, I could never get them to do what I wanted,
+          or they were just to complex for me to understand what they were doing. I have been working on that,
+          and because of Zan; I have built my own server and use it to host this page.
+          <br>
+          <br>
+          <br>
+          There are a lot of things on my mind that I want to accomplish, I am still working on figuring out how to get them all done, but stay tuned. If there is one thing I have leared in my life, its to always bet on myself.
+          <br>
+          There is a long term plan for this site (well more like an idea of a plan, but for right now I am just putting what I have out there.)
+        </p>
+
       </div>
 
       <div id="Professional" class="navcontent">
@@ -144,35 +180,22 @@
     </div>
 <!-- This concludes the page main content -->
 
+<br>
+<br>
+
 <!-- This is a picture of me in Iceland -->
     <center>
       <img src="me_in_Iceland.JPG" alt="Me in Iceland">
     </center>
 
 <!-- This is my gmail address -->
-    <center>
+    <center style="color:#ebedf2;">
       cunkelman.matthew@gmail.com
     </center>
 
 
 
   </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -205,5 +228,9 @@
   			// Get the element with id="defaultOpen" and click on it
   			document.getElementById("defaultOpen").click();
   		</script>
+
+    <style>
+			html {visibility:visible}
+		</style>
 
 </html>
