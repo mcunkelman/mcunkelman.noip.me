@@ -1,0 +1,205 @@
+<!Doctype html>
+<html lang="en" style="min-height:100%">
+  <meta charset="utf-8">
+
+<!-- Start of the style section -->
+        <style>
+                body {
+                      background-color: #2b333e; /* This is the blue grey that resembles my atom.io theme */
+                      min-height: 100vh; /* Sets the height to go to the bottom */
+                      margin: 0;
+                      padding: 0;
+                }
+                /*.nav {
+                  align-items: stretch;
+                  flex-flow: row nowrap;
+                  justify-content: space-between;
+                  display: flex;
+
+                }*/
+
+                .navbar {
+                      background-color: #041e42; /* This is Penn State Blue */
+                      Height: 60px;
+                      margin: 0;
+                      /*flex-flow: row nowrap;
+                      overflow: hidden;
+                      position: relative;
+                      */
+
+                }
+                .navbar button {
+                      background-color: #041e42; /* This is PSU blue */
+                      color: #ebedf2; /* Super Light Grey that will invert to the box color during hover */
+                      height: 60px; /* Set height to fill the nav */
+                      display: block;
+                      float: left;
+                      transition: 0.2s;
+                      width: 8%;
+                      min-width: 100px;
+                      padding: 12px 12px;
+                      border-width: 1px;
+                      border-color: #595962;
+                      font-size: 15px;
+
+                }
+                .navbar button:hover:not([disabled]) {
+                  background-color: #c4cee1;
+                  color: #041e42;
+                }
+
+                .navbar button.active {
+                  background-color: #02285c; /* royal blue */
+                  color: white;
+                }
+
+                .navlogo {
+                  float: left;
+                  position: absolute;
+                  top: 0px;
+                  right: 0px;
+                  pointer-events: none;
+                  max-height: 30px !important;
+                  border: none;
+
+                }
+
+                .navcontent {
+                  background-color: #36455a; /* medium grey from the logo */
+                  color: #c4cee1; /* light grey */
+                  border-top: none;
+                  padding: 6px 15px;
+                }
+
+        </style>
+<!-- End of the style section -->
+
+  <head> <!-- Use this to laod relevent files -->
+    <title>New testing</title>
+    <link rel ="icon" href ="./logos/logo_initial_5.ico" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/FortAwesome/Font-Awesome/master/css/all.css" media="screen"/>
+  </head>
+
+<!-- This is where all the page content will live -->
+  <body>
+
+<!-- This is where the nav bar and tab content will reside -->
+    <div class="nav">
+
+<!-- These are the nav bar buttons -->
+      <div class="navbar"> <!-- This will be the object that is the header/navigation bar -->
+
+        <button class="navname" disabled>
+          Matthew Cunkelman
+        </button>
+
+        <button class="navtabs" onclick="openCity(event, 'Home')" id="defaultOpen">
+          <i class="fas fa-home" style="margin-bottom:5px"></i><br>
+          Home
+        </button>
+
+        <button class="navtabs" onclick="openCity(event, 'Professional')">
+          <i class="fas fa-briefcase" style="margin-bottom:5px"></i><br>
+					Professional
+				</button>
+
+        <button class="navtabs" onclick="openCity(event, 'Travel')">
+          <i class="fas fa-globe-americas" style="margin-bottom:5px"></i><br>
+					Travel
+				</button>
+
+        <button class="navtabs" onclick="openCity(event, 'Hobbies')">
+					<i class="fas fa-grin-alt" style="margin-bottom:5px"></i><br>
+					Hobbies
+				</button>
+
+<!-- Adding the mcunkelman logo -->
+        <button class="navlogo" disabled>
+          <img src="./logos/mcunkelman_f.png" alt="[mcunkelman]">
+        </button>
+
+      </div>
+
+<!-- This is where I will populate the content for the different tabs -->
+      <div id="Home" class="navcontent">
+        Home stuff
+      </div>
+
+      <div id="Professional" class="navcontent">
+        Professional stuff
+      </div>
+
+      <div id="Travel" class="navcontent">
+        Travel stuff
+      </div>
+
+      <div id="Hobbies" class="navcontent">
+        Hobbies and such
+      </div>
+
+    </div>
+<!-- This concludes the page main content -->
+
+<!-- This is a picture of me in Iceland -->
+    <center>
+      <img src="me_in_Iceland.JPG" alt="Me in Iceland">
+    </center>
+
+<!-- This is my gmail address -->
+    <center>
+      cunkelman.matthew@gmail.com
+    </center>
+
+
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Tab functionality-->
+  		<script>
+  			function openCity(evt, cityName) {
+  	  		// Declare all variables
+  	  		var i, navcontent, navtabs;
+
+  	  		// Get all elements with class="tabcontent" and hide them
+  	  		navcontent = document.getElementsByClassName("navcontent");
+  	  		for (i = 0; i < navcontent.length; i++) {
+  	    		navcontent[i].style.display = "none";
+  	  		}
+
+  	  		// Get all elements with class="tablinks" and remove the class "active"
+  	  		navtabs = document.getElementsByClassName("navtabs");
+  	  		for (i = 0; i < navtabs.length; i++) {
+  	    		navtabs[i].className = navtabs[i].className.replace(" active", "");
+  	  		}
+
+  	  		// Show the current tab, and add an "active" class to the button that opened the tab
+  	  		document.getElementById(cityName).style.display = "block";
+  	  		evt.currentTarget.className += " active";
+  			}
+  		</script>
+
+  <!--Open "Home" tab by default (defaultOpen in Tab Links above)-->
+  		<script>
+  			// Get the element with id="defaultOpen" and click on it
+  			document.getElementById("defaultOpen").click();
+  		</script>
+
+</html>

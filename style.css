@@ -85,6 +85,7 @@
         /* width: 100%; */
         background-color: #041e42;
         font-family: serif;
+        overflow: hidden;
         }
       .tab button {
         background-color: #041E42;
@@ -100,9 +101,9 @@
         cursor: pointer;
         padding: 8px 0px;
         transition: 0.2s;
-        display: block;
+        display: inline-block;
         }
-      .tab button:hover {
+      .tab button:hover:not([disabled]) {
         background-color: #c4cee1;
         color: #041E42;
         }
