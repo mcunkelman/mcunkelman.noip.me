@@ -41,6 +41,7 @@
                       border-width: 1px;
                       border-color: #595962;
                       font-size: 15px;
+                      cursor: pointer;
 
                 }
                 .navbar button:hover:not([disabled]) {
@@ -53,13 +54,16 @@
                   color: white;
                 }
 
+                .navname {
+                  pointer-events: none;
+                }
+
                 .navlogo {
                   float: left;
                   position: absolute;
                   top: 0px;
                   right: 0px;
                   pointer-events: none;
-                  max-height: 30px !important;
                   border: none;
 
                 }
@@ -114,8 +118,8 @@
 				</button>
 
 <!-- Adding the mcunkelman logo -->
-        <button class="navlogo" disabled>
-          <img src="./logos/mcunkelman_f.png" alt="[mcunkelman]">
+        <button class="navlogo" disabled style="width:350px;height:60px;max-width:35%;min-width:100px;">
+          <img src="./logos/mcunkelman_f.png" alt="[mcunkelman]" style="max-height:40px;max-width:99%;">
         </button>
 
       </div>
