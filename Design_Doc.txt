@@ -1,0 +1,44 @@
+Site Design document
+##########################################
+Header:
+##########################################
+* Mcunkelman Logo
+* About Me # Main Page#
+* Travel
+* Recipes
+* Professional
+* LinkedIn
+* GitHub
+
+##########################################
+About Me
+##########################################
+General info about me as a person, why I built the site.
+Personal CV
+Talk about the server and things I am interested in
+
+##########################################
+Travel
+##########################################
+Cover Images with links for all the trip pages
+Info on where and when each took place
+World Map?
+
+##########################################
+Recipes
+##########################################
+Subcategories and keyword search
+Recipe of the day
+
+##########################################
+Professional
+##########################################
+Combo of Profile and Career from smann's page
+Info table
+CV
+Resume
+
+##########################################
+Footer
+##########################################
+Similar to Steves

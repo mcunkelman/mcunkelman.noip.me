@@ -1,0 +1,22 @@
+Title
+Total Time:
+* Active:
+* Inactive:
+* Baking:
+* Other:
+
+Ingredients:
+*
+*
+*
+*
+
+Step 1: task
+* Ingredients
+Notes about this step
+
+Step 2: task
+* Ingredients
+Notes about this step
+
+** Notes:  **
