@@ -2,6 +2,28 @@
 /* Reset default HTML settings */
 /* Using https://htmlcolorcodes.com/color-picker/ for color schemes */
 /* PSU blue #041e42 */
+/* PSU blue tones (plus grey)
+		#041e42 -Nav Bar
+		#132a4a
+		#233651
+		#324359
+		#424f61 -Site Background
+		#515b68
+		#616770
+		#707378 */
+
+/* PSU blue tints (plus white)
+		#041e42
+		#233a5a
+		#435671
+		#627289
+		#828fa1
+		#a1abb8
+		#c0c7d0
+		#e0e3e7 */
+
+/* Logo Green #52C32F */
+
 
 * {
 	margin: 0;
@@ -121,8 +143,8 @@ nav {
 	overflow: hidden;
 	height: 60px;
 	width: 100vw;
-	box-shadow: 0 0 7px #041e42;
-	background-color: #041e42;
+	box-shadow: 0 0 7px #041e42; /* PSU Blue */
+	background-color: #041e42; /* PSU Blue */
 	justify-content: space-between;
 	font-size: 1rem;
 	/* background-color: transparent; */
@@ -160,7 +182,7 @@ nav a {
   padding: 0.95rem 0.75rem;
 	text-decoration: none;
 	letter-spacing: 1px;
-  color: white;
+  color: #e0e3e7;
 }
 
 /* Make the tabs display in a row */
@@ -215,7 +237,7 @@ nav ul li a::after {
 	transition: all 0.25s;
 	width: 100%;
 	height: 2px;
-	background-color: red;
+	background-color: #52C32F; /* Logo Green */
 }
 /* Line comes in from left on the top */
 nav ul li a::before {
@@ -242,7 +264,7 @@ nav ul li a:hover::after {
 }
 body .tabsList li.active {
 	border-radius: 0.75rem;
-  background-color: white;
+  background-color: #c0c7d0;
 }
 
 nav .tabLinks {
@@ -287,7 +309,7 @@ nav .tabLinks i {
 	outline: none;
 	padding: 0.625rem;
 	background-color: transparent;
-  color: white;
+  color: #e0e3e7;
 }
 
 	/* The Modal (background) */
@@ -313,7 +335,7 @@ nav .tabLinks i {
 	margin-top: 80px;
   padding: 0;
   box-shadow: 0 0 5px #041e42;
-	background-color: white;
+	background-color: #c0c7d0; /* Pop up box for resume formats */
   animation-name: animateTop;
   animation-duration: 0.4s
 }
@@ -341,7 +363,7 @@ body .modal {
 	align-items: center;
 	margin: 0;
 	padding: 0;
-	color: white;
+	color: #e0e3e7;
 	font-size: 2rem;
 	font-weight: 300;
 }
@@ -360,7 +382,7 @@ body .modal {
 	align-items: center;
   padding: 1rem;
   background-color: #041e42;
-  color: white;
+  color: #e0e3e7;
 	font-size: 0.9rem;
 }
 
@@ -373,7 +395,7 @@ body .modal {
 }
 .modalBody a:hover {
 	background-color: #95a1b7;
-	color: white;
+	color: #e0e3e7;
 }
 
 .modalBody a.targetDefault {
@@ -394,7 +416,7 @@ body .modalBody a {
 	align-items: center;
   padding: 1rem;
   background-color: #041e42;
-  color: white;
+  color: #e0e3e7;
 	font-size: 0.9rem;
 }
 
@@ -427,7 +449,7 @@ body .tabContent {
 	border-bottom-left-radius: 1.25rem;
 	border-bottom-right-radius: 1.25rem;
 	box-shadow: 0 0 7px #041e42;
-	background-color: white;
+	background-color: #c0c7d0;
 }
 
 /* Style the footer info */
@@ -464,12 +486,12 @@ body .tabContent {
 }
 .infoFooter h1 {
 	pointer-events: none;
-	color: #041e42;
+	color: #52C32F;
 	font-size: 1.6rem;
 	font-weight: 500;
 }
 .infoFooter h1 span {
-	color: white;
+	color: #e0e3e7;
 	font-weight: normal;
 }
 .infoFooter h2 {
@@ -481,11 +503,11 @@ body .tabContent {
 	margin-left: 1rem;
 	padding: 0.5rem;
 	text-decoration: none;
-	color: white;
+	color: #e0e3e7;
 	font-size: 1.25rem;
 }
 .infoFooter i {
-	color: #041e42;
+	color: #48AB29;
 }
 
 /* Style the horizontal line */
@@ -546,7 +568,7 @@ figcaption {
 	#home .textUpdate {
 		display: table-cell;
 		width: 50%;
-		background-color: #d9d9d9;
+		background-color: #c0c7d0;
 	}
 	#home .textRecent {
 		border-bottom-left-radius: 1.25rem;
@@ -558,7 +580,7 @@ figcaption {
 	#home .textUpdate p {
 		padding: 0.5rem;
 		background-color: #041e42;
-		color: white;
+		color: #e0e3e7;
 		text-align: center;
 		font-weight: 500;
 	}
@@ -613,13 +635,14 @@ figcaption {
 	/* Style the different types of rows */
 	#profile .rowTop {
 		background-color: #041e42;
-		color: white;
+		color: #e0e3e7;
 	}
 	#profile .rowOdd {
-		background-color: #bfbfbf;
+		background-color: #C8CBD2;
+		/* color: #e0e3e7; */
 	}
 	#profile .rowEven {
-		background-color: #d9d9d9;
+		background-color: #a1abb8;
 	}
 
 	/* Style the icon and text columns */
@@ -907,7 +930,7 @@ figcaption {
 		border: none;
 		outline: none;
 		background-color: #041e42;
-		color: white;
+		color: #e0e3e7;
 		font-weight: 500;
 	}
 
@@ -934,13 +957,13 @@ figcaption {
 		}
 		#notes .browserBar.browserHide button {
 			background-color: #041e42;
-			color: white;
+			color: #e0e3e7;
 		}
 
 		/* Change background color of buttons on hover */
 		#notes .browserBar button:hover:not([disabled]) {
 		  background-color: #54657c !important;
-		  color: white;
+		  color: #e0e3e7;
 		}
 
 		/* Create an active/current tab class */
@@ -959,7 +982,7 @@ figcaption {
 		#notes .browserMobile {
 			white-space: nowrap;
 			pointer-events: none;
-			background-color: white !important;
+			background-color: #e0e3e7 !important;
 			color: black !important;
 			font-size: 1rem !important;
 			font-weight: bold;
@@ -974,7 +997,7 @@ figcaption {
 		/* Style the browser tabs */
 		#notes .browserLink {
 			font-size: 1.75rem;
-			color: white;
+			color: #e0e3e7;
 		}
 		#notes .browserInfo {
 			background-color: #262626 !important;
@@ -1105,7 +1128,7 @@ figcaption {
 			border: 1px solid black;
 			border-radius: 0.5rem;
 		  background-color: #404040;
-		  color: white;
+		  color: #e0e3e7;
 		  text-align: center;
 
 		  /* Position the tooltip text */
@@ -1355,7 +1378,7 @@ figcaption {
 	}
 	/* Make the "s" in smann logo text a different color */
 	.infoFooter span {
-	  color: white;
+	  color: #e0e3e7;
 	}
 
 	/* Style the text areas to turn off backgrounds and borders and to better fit smaller displays */
@@ -1490,7 +1513,9 @@ figcaption {
 			fadeIn 0.75s ease-in 0s 1 forwards,
 			fadeOut 0.5s ease-out 1.5s 1 forwards;
 		will-change: auto;
-		font-size: 75px;
+		/* font-size: 75px; */
+		font-size: calc(25px + (51 - 25) * ((100vw - 300px) / (625 - 300)));
+
 	}
 	.splashText .firstLetter {
 		display: block;
