@@ -1598,7 +1598,7 @@ figcaption {
 		display: inline-flex;
 		padding-bottom: 0.1rem;
 		pointer-events: none;
-		font-size: 1.6rem;
+		font-size: 1.0rem;
 		font-weight: 500;
 		letter-spacing: 1px;
 		color: #52C32F;
@@ -1681,6 +1681,9 @@ figcaption {
 	.infoFooter i {
 		padding-left: 0.25rem;
 		font-size: 1.5rem;
+	}
+	.infoFooter h1 {
+		display: none;
 	}
 	.infoFooter h2 {
 		display: none;
