@@ -24,6 +24,8 @@
 
 /* Logo Green #52C32F */
 
+/* Using fontawesome.com for logos */
+
 
 * {
 	margin: 0;
@@ -449,6 +451,7 @@ body .tabContent {
 	border-bottom-left-radius: 1.25rem;
 	border-bottom-right-radius: 1.25rem;
 	box-shadow: 0 0 7px #041e42;
+	color: #041e42;
 	background-color: #c0c7d0;
 }
 
@@ -675,17 +678,17 @@ figcaption {
 
 
 
-/* Style the Career tab elements */
+/* Style the professional tab elements */
 
 	/* Make sure all text is centered */
-	#career .professional {
+	#professional .professional {
 		margin-bottom: 0.65rem;
 		text-align: center;
 	}
 
 	/* Style the professional experiences */
-	#career .halliburton,
-	#career .murtech {
+	#professional .halliburton,
+	#professional .murtech {
 		display: inline-block;
 		max-width: 550px;
 		min-width: 350px;
@@ -693,34 +696,34 @@ figcaption {
 		padding: 1rem;
 		border: 1px solid #aaaaaa;
 	}
-	#career .halliburton {
+	#professional .halliburton {
 		border-top-left-radius: 1.5rem;
 		border-bottom-left-radius: 1.5rem;
 		background-color: #ffe6e6;
 	}
-	#career .halliburton img,
-	#career .murtech img {
+	#professional .halliburton img,
+	#professional .murtech img {
 		display: block;
 		height: 1rem;
 		margin: 1rem auto 1.25rem auto;
 	}
-	#career .murtech img {
+	#professional .murtech img {
 		width: 6.5rem;
 	}
-	#career .murtech {
+	#professional .murtech {
 		border-top-right-radius: 1.5rem;
 		border-bottom-right-radius: 1.5rem;
 		background-color: #e7f0fe;
 	}
-	#career .halliburton p,
-	#career .murtech p {
+	#professional .halliburton p,
+	#professional .murtech p {
 		margin-bottom: 0.75rem;
 		line-height: 1.3;
 		text-align: center;
 	}
 
 	/* Style the table that houses the job positions and dates */
-	#career .professional table {
+	#professional .professional table {
 		width: 100%;
 		table-layout: fixed;
 		border-collapse: collapse;
@@ -728,14 +731,14 @@ figcaption {
 	}
 
 	/* Style the different position and dates sections */
-	#career .jobPosition {
+	#professional .jobPosition {
 		width: 50%;
 		margin: 0;
 		padding-right: 0.75rem;
 		border-right: 1px solid black;
 		text-align: right;
 	}
-	#career .jobDates {
+	#professional .jobDates {
 		width: 50%;
 		margin: 0;
 		padding-left: 0.75rem;
@@ -743,16 +746,16 @@ figcaption {
 	}
 
 	/* Hide simplified table setup unless on smaller display */
-	#career .jobBreakdownSimplified {
+	#professional .jobBreakdownSimplified {
 		display: none;
 	}
 
 	/* Style the professional references */
-	#career .references {
+	#professional .references {
 		display: inline-block;
 		margin: 0 auto;
 	}
-	#career .references p {
+	#professional .references p {
 		display: inline-block;
 		min-width: 350px;
 		margin: 0.125rem 0;
@@ -762,28 +765,28 @@ figcaption {
 		text-align: center;
 		line-height: 1.2;
 	}
-	#career .reference1 {
+	#professional .reference1 {
 		border-top-left-radius: 1.5rem;
 		border-bottom-left-radius: 1.5rem;
 	}
-	#career .reference4 {
+	#professional .reference4 {
 		border-top-right-radius: 1.5rem;
 		border-bottom-right-radius: 1.5rem;
 	}
 
 
 	/* Style the image resume section */
-	#career .myResume {
+	#professional .myResume {
 		margin: -0.25rem auto 0.75rem;
 		font-size: 1rem;
 		text-align: center;
 	}
-	#career .myResume	a.targetDefault {
+	#professional .myResume	a.targetDefault {
 		display: none;
 	}
 
 	/* Style the text resume section */
-	#career .resume {
+	#professional .resume {
 		width: 100%;
 		max-width: 800px;
 		padding: 2.25rem;
@@ -793,95 +796,95 @@ figcaption {
 		background-color: #f2f2f2;
 		font-size: 0.92rem;
 	}
-	#career .resume li {
+	#professional .resume li {
     list-style-type: square;
 		padding-left: 0.25rem;
 	}
-	#career .resumeInfo {
+	#professional .resumeInfo {
 		display: flex;
 		justify-content: space-between;
 	}
-	#career span.show,
-	#career span.showEducation {
+	#professional span.show,
+	#professional span.showEducation {
 		display: none;
 	}
-	#career span.rightText {
+	#professional span.rightText {
 		float: right;
 	}
-	#career h3.myName {
+	#professional h3.myName {
 		margin-bottom: 0.25rem;
 	}
-	#career .resumeSection h2 {
+	#professional .resumeSection h2 {
 		padding-bottom: 0.75rem;
 		font-size: 1rem;
 	}
-	#career .resume ul {
+	#professional .resume ul {
 		padding: 0.75rem 0.5rem;
 	}
-	#career .resume ul.lastList {
+	#professional .resume ul.lastList {
 		padding-bottom: 0;
 	}
 
 	/* Style the images and related text */
-	#career figure {
+	#professional figure {
 		text-align: center;
 	}
-	#career .blowerUnit,
-	#career .facepiece {
+	#professional .blowerUnit,
+	#professional .facepiece {
 		height: auto;
 		margin-top: 0.5rem;
 	}
-	#career .blowerUnit {
+	#professional .blowerUnit {
 		width: 100%;
 		max-width: 750px;
 	}
-	#career .facepiece {
+	#professional .facepiece {
 		width: 70%;
 		max-width: 475px;
 	}
 
 
 
-/* Style the Hobbies tab elements */
+/* Style the travel tab elements */
 	/* Style the hyperlinks */
-	#hobbies .hyperlink {
+	#travel .hyperlink {
 		display: block;
 		margin-top: -0.5rem;
 		text-align: center;
 	}
 
 	/* Center images and captions */
-	#hobbies img {
+	#travel img {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	/* Style the lists on the Hobbies tab */
-	#hobbies ul {
+	/* Style the lists on the travel tab */
+	#travel ul {
 		padding-left: 1rem;
 	}
-	#hobbies ul li ul {
+	#travel ul li ul {
 		padding-left: 0.25rem;
 	}
-	#hobbies ul li:first-child {
+	#travel ul li:first-child {
 		margin-top: 0.5rem;
 	}
-	#hobbies ul li:last-child {
+	#travel ul li:last-child {
 		margin-bottom: 1rem;
 	}
 
 	/* Style the SS images */
-	#hobbies .SSdyno,
-	#hobbies .LSAinstall,
-	#hobbies .SSmeet {
+	#travel .SSdyno,
+	#travel .LSAinstall,
+	#travel .SSmeet {
 		height: auto;
 		width: 100%;
 		max-width: 750px;
 	}
 
 	/* Style the SS video */
-	#hobbies .SSdynoVideo {
+	#travel .SSdynoVideo {
 		display: block;
 		height: auto;
 		width: 100%;
@@ -890,41 +893,41 @@ figcaption {
 	}
 
 	/* Style the Trailblazer images */
-	#hobbies .TBdismantle,
-	#hobbies .id10,
-	#hobbies .dls {
+	#travel .TBdismantle,
+	#travel .id10,
+	#travel .dls {
 		height: auto;
 		width: 100%;
 	}
-	#hobbies .TBdismantle {
+	#travel .TBdismantle {
 		max-width: 725px;
 	}
-	#hobbies .id10 {
+	#travel .id10 {
 		max-width: 550px;
 	}
-	#hobbies .dls {
+	#travel .dls {
 		max-width: 725px;
 	}
 
 
 
-/* Style the Notes tab elements */
+/* Style the recipes tab elements */
 
 	/* Change the h3 headings */
-	#notes .changelog h3 {
+	#recipes .changelog h3 {
 		margin-bottom: 1rem;
 	}
-	#notes .changelog a {
+	#recipes .changelog a {
 		text-decoration: none;
 		color: inherit;
 	}
 
-	/* Style the section element on the Notes tab */
-	#notes aside {
+	/* Style the section element on the recipes tab */
+	#recipes aside {
 		margin-bottom: 1.25rem;
 		text-align: center;
 	}
-	#notes aside button {
+	#recipes aside button {
 		padding: 0.4rem 0.65rem;
 		border-radius: 0.8rem;
 		border: none;
@@ -934,9 +937,9 @@ figcaption {
 		font-weight: 500;
 	}
 
-	/* Apply browser styling on Notes tab */
+	/* Apply browser styling on recipes tab */
 		/* Style the tab */
-		#notes .browserBar {
+		#recipes .browserBar {
 		  display: inline-flex;
 		  overflow: hidden;
 			width: 100%;
@@ -944,7 +947,7 @@ figcaption {
 		}
 
 		/* Style the buttons that are used to open the tab content */
-		#notes .browserBar button {
+		#recipes .browserBar button {
 		  outline: none;
 			transition: 0.2s;
 		  width: 4rem;
@@ -955,19 +958,19 @@ figcaption {
 			text-align: center;
 			font-size: 1.75rem;
 		}
-		#notes .browserBar.browserHide button {
+		#recipes .browserBar.browserHide button {
 			background-color: #041e42;
 			color: #e0e3e7;
 		}
 
 		/* Change background color of buttons on hover */
-		#notes .browserBar button:hover:not([disabled]) {
+		#recipes .browserBar button:hover:not([disabled]) {
 		  background-color: #54657c !important;
 		  color: #e0e3e7;
 		}
 
 		/* Create an active/current tab class */
-		#notes #browserBar button.active {
+		#recipes #browserBar button.active {
 			margin-bottom: -1px;
 			border: 1px solid #cccccc;
 		  border-bottom: 1px solid #f2f2f2 !important;
@@ -978,8 +981,8 @@ figcaption {
 		}
 
 		/* Style the "Desktop:" and "Mobile:" sections */
-		#notes .browserDesktop,
-		#notes .browserMobile {
+		#recipes .browserDesktop,
+		#recipes .browserMobile {
 			white-space: nowrap;
 			pointer-events: none;
 			background-color: #e0e3e7 !important;
@@ -987,56 +990,56 @@ figcaption {
 			font-size: 1rem !important;
 			font-weight: bold;
 		}
-		#notes .browserDesktop {
+		#recipes .browserDesktop {
 			width: 6.35rem !important;
 		}
-		#notes .browserMobile {
+		#recipes .browserMobile {
 			width: 5.5rem !important;
 		}
 
 		/* Style the browser tabs */
-		#notes .browserLink {
+		#recipes .browserLink {
 			font-size: 1.75rem;
 			color: #e0e3e7;
 		}
-		#notes .browserInfo {
+		#recipes .browserInfo {
 			background-color: #262626 !important;
 		}
-		#notes .browserChrome {
+		#recipes .browserChrome {
 			background-color: #4d4400 !important;
 		}
-		#notes .browserFirefox {
+		#recipes .browserFirefox {
 			background-color: #482605 !important;
 		}
-		#notes .browserEdge {
+		#recipes .browserEdge {
 			background-color: #00464d !important;
 		}
-		#notes .browserIE {
+		#recipes .browserIE {
 			background-color: #083344 !important;
 		}
-		#notes .browserOpera {
+		#recipes .browserOpera {
 			background-color: #4d0000 !important;
 		}
-		#notes .browserSafari {
+		#recipes .browserSafari {
 			background-color: #021d4a !important;
 		}
-		#notes .browserAndroid {
+		#recipes .browserAndroid {
 			background-color: #313b11 !important;
 		}
-		#notes .browserApple {
+		#recipes .browserApple {
 			background-color: #262626 !important;
 		}
 
 		/* Style the border radius differences for the first and last tabs of each section */
-		#notes .firstTab {
+		#recipes .firstTab {
 			border-top-left-radius: 0.8rem;
 		}
-		#notes .lastTab {
+		#recipes .lastTab {
 			border-top-right-radius: 0.8rem;
 		}
 
 		/* Style the pics for the browser icons */
-		#notes .browserLink img {
+		#recipes .browserLink img {
 		  height: 2rem;
 		  margin-left: auto;
 		  margin-right: auto;
@@ -1044,7 +1047,7 @@ figcaption {
 		}
 
 		/* Style the browser dropdown content */
-		#notes .browserContent {
+		#recipes .browserContent {
 		  display: none;
 			margin-top: -1px;
 		  padding: 0 1rem;
@@ -1054,66 +1057,66 @@ figcaption {
 			background-color: #f2f2f2;
 			font-weight: bold;
 		}
-		#notes .browserContent img {
+		#recipes .browserContent img {
 			height: 1.5rem;
 			width: auto;
 			padding: 0;
 			margin: 0;
 		}
-		#notes .browserContent p {
+		#recipes .browserContent p {
 			display: inline-flex;
 			align-items: center;
 			margin-top: 1rem;
 		}
-		#notes .browserContent p span {
+		#recipes .browserContent p span {
 			position: relative;
 			margin: 0;
 			padding: 0;
 		}
-		#notes .browserContent ul {
+		#recipes .browserContent ul {
 			font-weight: normal;
 		}
 
 	/* Style the details elements */
-	#notes details {
+	#recipes details {
 		overflow: hidden; /* DO NOT DELETE!!! The details tag causes overflow when page is resized for a small device */
 	}
 
 	/* Style the summary elements */
-	#notes summary {
+	#recipes summary {
 		outline: none;
 		padding: 0.25rem 0.65rem 0.4rem;
 		border-radius: 0.75rem;
 		cursor: pointer;
 		font-weight: bold;
 	}
-	#notes summary:hover {
+	#recipes summary:hover {
 		background-color: #ffeb99;
 	}
 
 	/* Style the Code Names portion */
-	#notes .codeName {
+	#recipes .codeName {
 		padding-left: 0.5rem;
 		font-weight: bold;
 		font-style: italic;
 	}
-	#notes .codeName p {
+	#recipes .codeName p {
 		margin-top: 0.25rem;
 		margin-bottom: 0.75rem;
 	}
 
 	/* Change the area around changelog and elements */
-	#notes .changelogList {
+	#recipes .changelogList {
 		margin-bottom: -0.5rem;
 	}
-	#notes details ul {
+	#recipes details ul {
 		padding-left: 1.25rem;
 		padding-right: 0.25rem;
 	}
 
-	/* Styling tooltip for Code Names on Notes tab */
+	/* Styling tooltip for Code Names on recipes tab */
 		/* Tooltip container */
-		#notes .codeName .tooltip {
+		#recipes .codeName .tooltip {
 		  position: relative;
 		  display: inline-block;
 			margin-top: 0.25rem;
@@ -1121,7 +1124,7 @@ figcaption {
 		}
 
 		/* Tooltip text */
-		#notes .codeName .tooltip .tooltipText {
+		#recipes .codeName .tooltip .tooltipText {
 		  visibility: hidden;
 		  width: 475px;
 			padding: 0.75rem 0.75rem;
@@ -1144,26 +1147,26 @@ figcaption {
 		}
 
 		/* Show the tooltip text when you mouse over the tooltip container */
-		#notes .codeName .tooltip:hover .tooltipText {
+		#recipes .codeName .tooltip:hover .tooltipText {
 		  visibility: visible;
 			overflow: visible;
 		  opacity: 0.95;
 		}
 
-	/* Style the lists on the Notes tab */
-	#notes ul {
+	/* Style the lists on the recipes tab */
+	#recipes ul {
 		padding-left: 1rem;
 	}
-	#notes ul li {
+	#recipes ul li {
 		font-size: 0.9rem;
 	}
-	#notes ul li ul {
+	#recipes ul li ul {
 		padding-left: 0.25rem;
 	}
-	#notes ul li:first-child {
+	#recipes ul li:first-child {
 		margin-top: 0.5rem;
 	}
-	#notes ul li:last-child {
+	#recipes ul li:last-child {
 		margin-bottom: 1rem;
 	}
 
@@ -1212,19 +1215,19 @@ figcaption {
 
 /* Change border radius of references on resize */
 @media screen and (max-width: 1500px) {
-	#career .references {
+	#professional .references {
 		display: block;
 	}
-	#career .reference1 {
+	#professional .reference1 {
 		border-bottom-left-radius: 0;
 	}
-	#career .reference2 {
+	#professional .reference2 {
 		border-top-right-radius: 1.5rem;
 	}
-	#career .reference3 {
+	#professional .reference3 {
 		border-bottom-left-radius: 1.5rem;
 	}
-	#career .reference4 {
+	#professional .reference4 {
 		border-top-right-radius: 0;
 	}
 }
@@ -1254,13 +1257,13 @@ figcaption {
 
 /* Swap around job breakdown design and layout when making screen smaller */
 @media screen and (max-width: 1175px) {
-	#career .jobBreakdownTable {
+	#professional .jobBreakdownTable {
 		display: none;
 	}
-	#career .jobBreakdownSimplified {
+	#professional .jobBreakdownSimplified {
 		display: inline-block;
 	}
-	#career .jobBreakdownSimplified p {
+	#professional .jobBreakdownSimplified p {
 		margin-top: -0.3rem;
 		margin-bottom: 0;
 		line-height: 1.3;
@@ -1270,20 +1273,20 @@ figcaption {
 /* Remove browser descriptions when screen is small */
 @media screen and (max-width:850px) {
 	/* Change styling of resume info */
-	#career .resumeInfo {
+	#professional .resumeInfo {
 		display: block;
 		text-align: center;
 	}
-	#career .resumeInfo span.show {
+	#professional .resumeInfo span.show {
 		display: inherit;
 	}
-	#career .resumeInfo span.hide {
+	#professional .resumeInfo span.hide {
 		display: none;
 	}
 
 	/* Add space between browser types */
-	#notes .browserLink.browserInfo,
-	#notes .browserLink.browserSafari {
+	#recipes .browserLink.browserInfo,
+	#recipes .browserLink.browserSafari {
 		margin-right: 0.25rem;
 	}
 	/* Turn off the descriptions */
@@ -1384,6 +1387,7 @@ figcaption {
 	/* Style the text areas to turn off backgrounds and borders and to better fit smaller displays */
 	#home .textWelcome b {
 		font-weight: normal;
+		color: #041e42;
 	}
 
 	/* Style the welcoming pic on the Home tab */
@@ -1426,31 +1430,31 @@ figcaption {
 		padding-bottom: 0;
 	}
 
-	#career .halliburton span,
-	#career .murtech span {
+	#professional .halliburton span,
+	#professional .murtech span {
 		font-weight: bold;
 	}
-	/* Change career elements on resize */
-	#career .myResume	a.targetBlank {
+	/* Change professional elements on resize */
+	#professional .myResume	a.targetBlank {
 		display: none;
 	}
-	#career .myResume a.targetDefault {
+	#professional .myResume a.targetDefault {
 		display: inherit;
 	}
-	#career .resume {
+	#professional .resume {
 		box-shadow: none;
 	}
 
 	/* Style summary on click */
-	#notes summary {
+	#recipes summary {
 		padding-left: 0;
 	}
-	#notes summary:hover {
+	#recipes summary:hover {
 		background-color: inherit;
 	}
 
 	/* Change the Code Name tooltip text style to better fit smaller displays */
-	#notes .codeName .tooltip .tooltipText {
+	#recipes .codeName .tooltip .tooltipText {
 	  max-width: 87vw;
 
 	  /* Position the tooltip text */
@@ -1460,45 +1464,45 @@ figcaption {
 	}
 }
 
-/* Change around Career tab elements */
+/* Change around professional tab elements */
 @media screen and (max-width: 760px) {
 	/* Style the professional experience to better fit smaller displays */
-	#career .halliburton,
-	#career .murtech,
-	#career .references p {
+	#professional .halliburton,
+	#professional .murtech,
+	#professional .references p {
 		display: block;
 		width: 350px;
 		max-width: 100%;
 		margin: 0.25rem auto;
 	}
-	#career .halliburton {
+	#professional .halliburton {
 		border-top-right-radius: 1.5rem;
 		border-bottom-left-radius: 0;
 	}
-	#career .murtech {
+	#professional .murtech {
 		border-top-right-radius: 0;
 		border-bottom-left-radius: 1.5rem;
 	}
-	#career .reference1 {
+	#professional .reference1 {
 		border-top-right-radius: 1.5rem;
 		border-bottom-left-radius: 0;
 	}
-	#career .reference2 {
+	#professional .reference2 {
 		border-top-right-radius: 0;
 	}
-	#career .reference3 {
+	#professional .reference3 {
 		border-bottom-left-radius: 0;
 	}
-	#career .reference4 {
+	#professional .reference4 {
 		border-top-right-radius: 0;
 		border-bottom-left-radius: 1.5rem;
 	}
 
 	/* Change styling of resume sections */
-	#career .resumeSection span.show {
+	#professional .resumeSection span.show {
 		display: inherit;
 	}
-	#career .resumeSection span.hide {
+	#professional .resumeSection span.hide {
 		display: none;
 	}
 }
@@ -1613,50 +1617,50 @@ figcaption {
 	}
 
 	/* Style the text resume section */
-	#career .resume {
+	#professional .resume {
 		padding: 1rem;
 	}
 
 	/* Change styling of resume sections */
-	#career .resumeSection h2 {
+	#professional .resumeSection h2 {
 		padding-top: 0;
 	}
-	#career span.hideEducation {
+	#professional span.hideEducation {
 		display: none;
 	}
-	#career span.showEducation {
+	#professional span.showEducation {
 		display: inherit;
 	}
 
-	/* Apply browser styling on Notes tab */
+	/* Apply browser styling on recipes tab */
 		/* Style the tabs differently for smaller displays */
-		#notes .browserBar {
+		#recipes .browserBar {
 		  height: 3rem;
 		}
 
 		/* Style the buttons that are used to open the tab content differently for smaller displays */
-		#notes .browserBar button {
+		#recipes .browserBar button {
 		  width: 100%;
 		  font-size: 1.5rem;
 		}
 
 		/* Style the pics for the browser icons */
-		#notes .browserLink img {
+		#recipes .browserLink img {
 		  height: 1.75rem;
 		}
 
 		/* Style the browser dropdown content */
-		#notes .browserContent {
+		#recipes .browserContent {
 			border-top-right-radius: 0;
 		}
 
 		/* Style the Code Names portion */
-		#notes .codeName {
+		#recipes .codeName {
 			padding-left: 0;
 		}
 
 		/* Style the list elements */
-		#notes details ul {
+		#recipes details ul {
 			padding-left: 0.75rem;
 		}
 }
