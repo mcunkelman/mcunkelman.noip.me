@@ -1589,7 +1589,7 @@ figcaption {
 	/* Style footer information */
 	.infoFooter a,
 	.infoFooter div .modalButton button {
-		font-size: 0.85rem;
+		font-size: 0.80rem;
 	}
 	.infoFooter h1 {
 		display: none;
@@ -1682,7 +1682,12 @@ figcaption {
 		padding-left: 0.25rem;
 		font-size: 1.5rem;
 	}
-
+	.infoFooter h2 {
+		display: none;
+	}
+	.infoFooter h2 span {
+		display: none;
+	}
 	/* Add a line break to the middle of the LinkedIn link on Profile tab */
 	#profile .tableText br {
 		display: block;
