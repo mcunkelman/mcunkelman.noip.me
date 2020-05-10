@@ -371,7 +371,7 @@ body .modal {
 .closeModal:focus {
   text-decoration: none;
   cursor: pointer;
-	color: #95a1b7;
+	color: #424f61; /* 95a1b7 */;
 }
 
 .modalHeader {
@@ -394,7 +394,7 @@ body .modal {
 	color: #041e42;
 }
 .modalBody a:hover {
-	background-color: #95a1b7;
+	background-color: #424f61; /* 95a1b7 */;
 	color: #e0e3e7;
 }
 
@@ -1297,7 +1297,7 @@ figcaption {
 @media screen and (max-width: 820px) {
 	/* Make sure everything is compatibile and works well with Android and iOS */
 	html {
-		background: #95a1b7;
+		background: #424f61; /* 95a1b7 */
 		font-size: 14px;
 	}
 
@@ -1345,7 +1345,7 @@ figcaption {
 	/* Style the tabs' content and make it so the navigation bar is 100% width, but the contents can be a different width */
 	body .container {
 		height: 100%;
-		background: linear-gradient(to top, #95a1b7 0%, #95a1b7 50%, #041e42 50%, #041e42 100%);
+		background: linear-gradient(to top, #424f61; /* 95a1b7 */ 0%, #424f61; /* 95a1b7 */ 50%, #041e42 50%, #041e42 100%);
 	}
 
 	/* Restyle the tabs' content */
@@ -1358,7 +1358,7 @@ figcaption {
 	.infoFooter {
 		height: 60px;
 		padding: 0 1.5rem;
-		background-color: transparent;
+		background-color: #424f61; /* 95a1b7 */
 	}
 	.infoFooter a,
 	.infoFooter div .modalButton button {
@@ -1601,7 +1601,7 @@ figcaption {
 		font-size: 1.6rem;
 		font-weight: 500;
 		letter-spacing: 1px;
-		color: #041e42;
+		color: #52C32F;
 	}
 	.infoFooter h2 span {
 		font-weight: normal;
