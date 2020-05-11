@@ -1,0 +1,52 @@
+Content
+
+    About Me:
+    Hello, my name is Matthew Cunkelman and this is v2 of my website.
+
+    I originally set out to build and host a site when I was working in the Oil and Gas industry.
+    I was curious to see what I could learn and figure out on my own.
+    I started by researching and then building a computer with Linux Ubuntu operating system.
+    After I had built a computer I wanted to know what else I could do, so I started looking into network configurations and converting this computer into a server.
+    The more time I spent working on my computer and exploring
+    (I have a Ubuntu install USB on my keychain because I had to wipe and start over so many times) the more I wanted to try.
+    Knowing that anything I did I could undo
+    (since this wan't my main or work computer, it had no critical files),
+    encouraged me to try anything I wanted.
+    Eventually I figured out how to host a live website, and I built a very simple site for myself.
+    I managed to build the skills to change careers, and I am now an Autonomous Systems Engineer for Uber ATG.
+    My site sat untouched for a while, while I pursued other learning opportunities.
+    But now with some help I am rebuilding it to better showcase me, and the things I am passionate about.
+    I am building out tabs for me, my career, my travel (and places I still want to travel) as well as some of my favorite recipes
+    (I love to cook).
+    Take a look around, and feel free to reach out if you have questions.
+
+    I am utilizing GitHub to build this site and remotely push updates to my server, I also use Atom.io as my text editor.
+
+    I do self host, so occasionally there will be some outages, but I try to limit them to a few minutes here and there.
+
+
+Profile
+
+    I am an engineer with over 8 years of professional experience between Autonomous Vehicles and the Oil and Gas industry.
+
+    I have spent the majority of my career in the oil and gas industry,
+    working as a Petroleum Engineer after obtaining a degree in Mechanical Engineering.
+    After 7 years as a Petroleum Engineer, I transitioned again to being an Autonomous Systems Engineer for UBER ATG.
+    Both transitions required adapting my existing skills as well as learning new ones.
+    Creating v1 of this site, was a part of teaching myself some of those new skills.
+
+    Throughout my career I have learned many new skills,
+    some were directly necessary for my day to day tasks, while others branched far outside my roles expectations.
+    I have had the privilege of working with a lot of unique people, with unique backgrounds and skill sets.
+    I have tried to take advantage of this when I can, to learn as much as possible, and it has made me a more well rounded and resourceful person.
+
+
+Career
+
+
+
+Travel
+
+
+
+Recipes

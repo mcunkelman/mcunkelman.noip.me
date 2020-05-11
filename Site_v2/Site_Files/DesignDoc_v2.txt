@@ -1,0 +1,68 @@
+## Design Document
+## This is the design Document for the official v2 of mcunkelman.noip.me
+## This new revision will incorporate the following:
+* main.html ## this will be the main landing page and will have the framework for the rest of the site
+* javascripts.js ## Any scripts needed to execute the page
+* style.css ## This will contain the basic styles for the page
+## I would like to find a way to add the following and call them into the defined
+* Colors.xx
+* Content.xx
+* Travel Folder
+* Recipe Folder
+
+## Main.html - Layout
+##################################################################################
+ ________________________________________________________________________________
+|*Matthew Cunkelman*| Professional | Travel | Recipes | GitHub | LinkedIn | LOGO |
++--------------------------------------------------------------------------------+
+|  About Me:                                                                     |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|                                                                                |
+|________________________________________________________________________________|
+
+                       +----------------------------+
+                       |                            |
+                       |                            |
+                       |                            |
+                       |                            |
+                       |        Picture of Me       |
+                       |                            |
+                       |                            |
+                       |                            |
+                       |                            |
+                       +----------------------------+
+
+##################################################################################
+Content:
+##################################################################################
+Matthew Cunkelman
+This will be the about me section where I say who I am and the point of this site
+##################################################################################
+Professional
+This tab will have a table with some basic info
+
+##################################################################################
+
+##################################################################################
+
+##################################################################################
+
+##################################################################################

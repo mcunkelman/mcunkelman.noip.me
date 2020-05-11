@@ -1,0 +1,26 @@
+Profile Table Ideas
+
+About Me:
+1. Matthew Cunkelman
+2. Penn State
+3. 2012
+4. B.S. in Mechanical Engineering
+5. CCAC - Current
+6. A.D. in Software Development
+7. Located in Pittsburgh
+8. Phone
+9. Email
+10. LinkedIn
+11. Always willing to learn and explore
+
+
+Quick Skills:
+1. Mechanical/Petroleum/Autonomous Systems Engineering
+2. Computer Hardware
+3. Coding
+4. Network Infrastructure
+5. Google Suite
+7. Critical Thinking and Problem Solving
+8. System Requirements Development
+9. Cross Team Collaboration
+10. Leader/Mentor/Team Member/Individual Contributor
