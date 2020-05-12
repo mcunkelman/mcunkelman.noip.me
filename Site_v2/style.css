@@ -881,64 +881,36 @@ figcaption {
 	}
 	#travel .box {
 		display: flex;
+		justify-content: center;
 		align-items: center;
 	}
 	#travel h3.box {
 		text-align: center;
 	}
+	#travel .coverPhoto img {
+		max-height: 200px;
+		max-width: 80% !important;
+		border-radius: 1rem;
+	}
 	/* Center images and captions */
-	#travel img {
+	#travel .box img {
 		height: 3rem;
 	}
-
-	/* Style the lists on the travel tab */
-	#travel ul {
-		padding-left: 1rem;
+	#travel a {
+		text-align: center;
 	}
-	#travel ul li ul {
-		padding-left: 0.25rem;
+	#travel .coverPhoto {
+		justify-content: center;
+		text-align: center;
+		max-width: 100%;
 	}
-	#travel ul li:first-child {
-		margin-top: 0.5rem;
-	}
-	#travel ul li:last-child {
-		margin-bottom: 1rem;
-	}
-
-	/* Style the SS images */
-	#travel .SSdyno,
-	#travel .LSAinstall,
-	#travel .SSmeet {
-		height: auto;
-		width: 100%;
-		max-width: 750px;
+	#travel p {
+		text-align: center;
+		color: #041e42;
+		font-size: 1rem;
 	}
 
-	/* Style the SS video */
-	#travel .SSdynoVideo {
-		display: block;
-		height: auto;
-		width: 100%;
-		max-width: 750px;
-		margin: 0 auto;
-	}
 
-	/* Style the Trailblazer images */
-	#travel .TBdismantle,
-	#travel .id10,
-	#travel .dls {
-		height: auto;
-		width: 100%;
-	}
-	#travel .TBdismantle {
-		max-width: 725px;
-	}
-	#travel .id10 {
-		max-width: 550px;
-	}
-	#travel .dls {
-		max-width: 725px;
-	}
 
 
 
