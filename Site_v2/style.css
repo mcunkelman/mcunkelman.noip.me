@@ -698,26 +698,26 @@ figcaption {
 		border: 1px solid #aaaaaa;
 	}
 	#career .uber {
-		border-top-left-radius: 1.5rem;
-		border-bottom-left-radius: 1.5rem;
-		border-top-right-radius: 1.5rem;
-		border-bottom-right-radius: 1.5rem;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
 		background-color: #ffffff;
 		color: black;
 	}
 	#career .eqt {
-		border-top-left-radius: 1.5rem;
-		border-bottom-left-radius: 1.5rem;
-		border-top-right-radius: 1.5rem;
-		border-bottom-right-radius: 1.5rem;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
 		background-color: #858cac;
 		color: black;
 	}
 	#career .halliburton {
-		border-top-left-radius: 1.5rem;
-		border-bottom-left-radius: 1.5rem;
-		border-top-right-radius: 1.5rem;
-		border-bottom-right-radius: 1.5rem;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
 		background-color: #ffdcdc;
 		color: black;
 	}
@@ -878,11 +878,13 @@ figcaption {
 		display: block;
 		margin-top: -0.5rem;
 		text-align: center;
+		max-width: 100%;
 	}
 	#travel .box {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		max-width:100%;
 	}
 	#travel h3.box {
 		text-align: center;
@@ -898,6 +900,7 @@ figcaption {
 	}
 	#travel a {
 		text-align: center;
+		max-width: 100%;
 	}
 	#travel .coverPhoto {
 		justify-content: center;
@@ -909,7 +912,16 @@ figcaption {
 		color: #041e42;
 		font-size: 1rem;
 	}
+	#travel ul {
+		text-align: center;
+	}
+	#travel li {
+		text-align: center;
+	}
 
+	#alaska {
+		
+	}
 
 
 
