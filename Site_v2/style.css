@@ -136,7 +136,6 @@ body {
 }
 
 /* Style the overall navigation bar */
-
 nav {
 	position: fixed;
 	z-index: 1;
@@ -205,22 +204,30 @@ nav ul li {
   padding: 0.5rem 0;
   list-style: none;
 }
-nav ul li ul {
-	display: none;  /* Hides the drop-down menu */
-		height: auto;
-		margin: 0; /* Aligns drop-down box underneath the menu item */
-		padding: 0; /* Aligns drop-down box underneath the menu item */
-}
-nav ul li:hover ul {
-	display: block;
-}
 
-nav ul li ul li a {
-		border-left: 1px solid #1f5065;
-		border-right: 1px solid #1f5065;
-		border-top: 1px solid #74a3b7;
-		border-bottom: 1px solid #1f5065;
-		}
+/* Create animation for each tab
+nav ul li:nth-child(1) {
+	animation: fadeIn 0.2s ease-in 0s 1 forwards;
+}
+nav ul li:nth-child(2) {
+	animation: fadeIn 0.4s ease-in 0s 1 forwards;
+}
+nav ul li:nth-child(3) {
+	animation: fadeIn 0.6s ease-in 0s 1 forwards;
+}
+nav ul li:nth-child(4) {
+	animation: fadeIn 0.8s ease-in 0s 1 forwards;
+}
+nav ul li:nth-child(5) {
+	animation: fadeIn 1.0s ease-in 0s 1 forwards;
+}
+*/
+
+/* Remove extra space at the end of the last link
+nav ul li a:last-child {
+  margin-right: 0;
+}
+*/
 
 /* Style the lines that appears when hovering */
 nav ul li a::before,
@@ -249,26 +256,6 @@ nav ul li a:hover::before,
 nav ul li a:hover::after {
 	transform: scaleX(1);
 }
-
-
-.crumbs ol {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.crumb {
-    display: inline-block;
-}
-
-.crumb a::after {
-    display: inline-block;
-    color: #000;
-    content: '>';
-    font-size: 80%;
-    font-weight: bold;
-    padding: 0 3px;
-}
-
 
 /* Tab active state */
 .active {
@@ -933,7 +920,7 @@ figcaption {
 	}
 
 	#alaska {
-
+		
 	}
 
 
@@ -1197,6 +1184,3 @@ figcaption {
 	#recipes ul li:last-child {
 		margin-bottom: 1rem;
 	}
-
-
-	/* Dropdown Stuff */
