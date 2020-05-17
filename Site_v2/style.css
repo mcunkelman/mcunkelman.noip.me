@@ -445,8 +445,9 @@ body .tab {
 	background-color: #424f61;
 }
 body .tabContent {
+	margin: 0 auto;
 	width: 1600px;
-	margin: 0 calc(100vw / 2 - 1600px / 2); /* This is used to stop the shifting when the scrollbar appears; Change to auto to go back to the defalut */
+	max-width: 95%;
 	padding: 1rem 1.25rem;
 	border-bottom-left-radius: 1.25rem;
 	border-bottom-right-radius: 1.25rem;
@@ -915,14 +916,42 @@ figcaption {
 	#travel ul {
 		text-align: center;
 	}
-	#travel li {
+	#travel ul li {
+		text-align: center;
+		list-style: none;
+	}
+	#travel aside {
+		margin-bottom: 1.25rem;
 		text-align: center;
 	}
+	#travel aside button {
+		padding: 0.4rem 0.65rem;
+		border-radius: 0.8rem;
+		border: none;
+		outline: none;
+		background-color: #041e42;
+		color: #e0e3e7;
+		font-weight: 500;
+	}
+	#travel iframe {
+		width: 70%;
+		height: 600px;
+		align: center;
+		justify-content: center;
+		text-align: center;
+	}
+	#travel .travelGallery {
 
-	#alaska {
-		
+	}
+	#alaskaShowHide {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
 	}
 
+	#travel #alaskaTravelGallery img {
+		max-width: 80%;
+	}
 
 
 

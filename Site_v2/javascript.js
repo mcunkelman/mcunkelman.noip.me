@@ -117,3 +117,22 @@ function browserShowHide() {
     x.style.display = "none";
   }
 }
+
+
+
+function alaskaShowHide() {
+  var x = document.getElementById("alaskaShowHide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function alaskaGalleryShowHide() {
+  var x = document.getElementById("alaskaTravelGallery");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
