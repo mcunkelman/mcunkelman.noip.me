@@ -926,12 +926,14 @@ figcaption {
 	}
 	#travel aside button {
 		padding: 0.4rem 0.65rem;
-		border-radius: 0.8rem;
+		border-radius: 0.5rem;
 		border: none;
 		outline: none;
 		background-color: #041e42;
 		color: #e0e3e7;
-		font-weight: 500;
+		border-color: #52C32F;
+		width: 99%;
+		font-size: 1.25rem;
 	}
 	#travel iframe {
 		width: 70%;
@@ -953,7 +955,8 @@ figcaption {
 		max-width: 80%;
 	}
 
-
+#travel aside button {
+}
 
 /* Style the recipes tab elements */
 
