@@ -136,3 +136,54 @@ function alaskaGalleryShowHide() {
     x.style.display = "none";
   }
 }
+
+function icelandShowHide() {
+  var x = document.getElementById("icelandShowHide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function icelandGalleryShowHide() {
+  var x = document.getElementById("icelandTravelGallery");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function nzShowHide() {
+  var x = document.getElementById("nzShowHide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function nzGalleryShowHide() {
+  var x = document.getElementById("nzTravelGallery");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function wyShowHide() {
+  var x = document.getElementById("wyShowHide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function wyGalleryShowHide() {
+  var x = document.getElementById("wyTravelGallery");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
