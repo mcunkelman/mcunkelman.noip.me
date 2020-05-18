@@ -943,10 +943,9 @@ figcaption {
 		border: 1px solid #041e42;
 	}
 	#travel iframe {
-		width: 720px;
-		height: 540px;
-		max-width:80%;
-		max-height:80%;
+		width: 80%;
+		height: 900px;
+		max-height:80vh;
 		align: center;
 		justify-content: center;
 		text-align: center;
