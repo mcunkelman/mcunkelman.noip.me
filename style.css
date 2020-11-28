@@ -692,7 +692,7 @@ figcaption {
 		display: inline-block;
 		margin: 0.125rem 0;
 		padding: 1rem;
-		border: 1px solid #aaaaaa;
+
 	}
 	#career .uber {
 		width: 80%;
@@ -706,24 +706,27 @@ figcaption {
 		border-bottom-left-radius: 0.5rem;
 		border-top-right-radius: 0.5rem;
 		border-bottom-right-radius: 0.5rem;
-		background-color: #ffffff;
-		color: black;
+		background-color: #000000;
+		color: #ffffff;
+		border: 2px solid #000000;
 	}
 	#career .eqt {
 		border-top-left-radius: 0.5rem;
 		border-bottom-left-radius: 0.5rem;
 		border-top-right-radius: 0.5rem;
 		border-bottom-right-radius: 0.5rem;
-		background-color: #858cac;
-		color: black;
+		background-color: #c0c6de;
+		color: #000000;
+		border: 2px solid #031e45;
 	}
 	#career .halliburton {
 		border-top-left-radius: 0.5rem;
 		border-bottom-left-radius: 0.5rem;
 		border-top-right-radius: 0.5rem;
 		border-bottom-right-radius: 0.5rem;
-		background-color: #ffdcdc;
-		color: black;
+		background-color: #444c4f;
+		color: #ffffff;
+		border: 2px solid #444c4f;
 	}
 	#career .halliburton img {
 		display: block;
@@ -764,6 +767,10 @@ figcaption {
 		padding-right: 0.75rem;
 		border-right: 1px solid;
 		text-align: center;
+	}
+	#career .eqt .jobPosition {
+		border-right: 1px solid;
+		border-color: #ce0060;
 	}
 	#career .jobDates {
 		width: 50%;
