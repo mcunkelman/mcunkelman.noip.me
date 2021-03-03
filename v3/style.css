@@ -1,0 +1,89 @@
+/* Blue / Green / Brown Color Scheme
+#002549 - Main Blue
+#1DBD1B - Main Green (Accent)
+#492400 - Main Brown (Second Accent)
+*/
+:root{
+    --main-blue:#002549;
+    --main-green: #1dbd1b;
+    --main-brown: #492400;
+    --font-onDark: #dfe4e8; /* blue + 7 white */
+    --font-onDark2: #9fadbb; /* blue + 5 white */
+    --font-onLight: #001c37; /* blue + 1 black */
+    --med-grey: #405264; /* blue + 4 gray */
+    --light-grey: #BFC8D2; /* blue + 6 white */
+    --light-grey2: #9FADBB; /* blue + 5 white */
+    --main-blue-shadow: #002040; /* blue + 1 black */
+    --main-green-shadow: #0E5F0E; /* green + 4 black */
+    --main-brown-grey: #5d4630; /* brown plus 3 gray */
+    --main-blue-grey3: #30475D; /* Main blue + 3 grey */
+    --ice-blue: #69B5FF; /* ice blue for logo */
+    --green-light1: #39c538; /* main green + 1 white */
+}
+*{
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    background-color: var(--med-grey);
+}
+header{
+    background-color: var(--main-blue);
+    color: var(--font-onDark);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    box-shadow:0px 0px 5px var(--main-blue-shadow);
+}
+header nav{
+    height: 40px;
+    margin-top: 5px;
+    align-items: center;
+}
+header nav a{
+    color: var(--light-grey2);
+    font-size: 30px;
+    text-decoration: none;
+}
+#wrapper{
+    padding-top: 50px;
+    width: 95%;
+    background-color: var(--med-grey);
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    background-color: var(--light-grey);
+    color: var(--font-onLight);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 400px;
+    box-shadow:0px 0px 5px var(--main-blue-shadow);
+}
+main h2{
+    text-align: center;
+}
+footer{
+    background-color: var(--main-blue);
+    color: var(--font-onDark2);
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: italic;
+    min-height: 50px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow:0px 0px 5px var(--main-blue-shadow);
+}
+.globe{
+    src: url(../mcunkelman_logo/icons_custom/globe1.svg);
+    fill: var(--main-green);
+    height: 50px;
+    width: 50px;
+}

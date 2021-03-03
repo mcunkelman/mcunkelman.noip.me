@@ -1,0 +1,8 @@
+A text file to outline the text I want to add to my site.
+
+My name is <b>Matthew Cunkelman</b> and this is my website <b><i>v3</i></b>.
+
+This site is the 3<sup>rd</sup> iteration of my website, 
+I originally created this as a living resume while working in the Oil & Gas Industry. 
+I have learned a lot and come a long way since I first started, but I am still learning and playing.
+
