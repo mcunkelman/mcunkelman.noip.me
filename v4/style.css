@@ -1,0 +1,76 @@
+/******************************************
+*  Author : mcunkelman   
+*  Created On : Wed Mar 24 2021
+*  File : style.css
+*******************************************/
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+body {
+    background-color: #424f61;
+    width: 100%;
+}
+nav {
+    background-color: #041e42;
+    width: 100%;
+    height: 4.0em;
+}
+nav ul {
+    float: right;
+    list-style-type: none;
+    padding: 0.5em;
+    margin-right: 1em;
+    margin-top: .75em;
+}
+nav li {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+nav a{
+    text-decoration: none;
+    color: #C0C7D0;
+    border: 0.1em solid #52C32F;
+    border-radius: 0.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.25em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+nav a:hover{
+    color: white;
+}
+nav a:active{
+    background-color: #C0C7D0;
+    color: #041e42;
+}
+#wrapper {
+    width: 80%;
+    background-color: #C0C7D0;
+    color: #041e42;
+    min-height: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    width: 80%;
+    min-height]y: 5em;
+    background-color: #041e42;
+    color: #C0C7D0;
+    font-size: 1em;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+p{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
