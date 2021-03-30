@@ -15,7 +15,10 @@ body {
 nav {
     background-color: #041e42;
     width: 100%;
-    height: 4.0em;
+    height: 4.0em; 
+}
+nav li{
+    display: inline;
 }
 #logo{
     float: left;
