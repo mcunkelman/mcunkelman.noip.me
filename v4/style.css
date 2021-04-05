@@ -3,63 +3,83 @@
 *  Created On : Wed Mar 24 2021
 *  File : style.css
 *******************************************/
+
 * {
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
 	box-sizing: border-box;
+}
+html {
+    width: 100%;
 }
 body {
     background-color: #424f61;
     width: 100%;
+    height: 100%;
 }
 nav {
-    background-color: #041e42;
     width: 100%;
-    height: 4.0em; 
+    background-color: #041e42;
+    display: inline-block;
 }
-nav li{
-    display: inline;
-}
-#logo{
+#logo {
     float: left;
+    display: inline-block;
 }
-#logo img{
+#logo img {
     height: 3em;
-    margin: 0.5em 0.5em 0.5em 0.5em;
 }
 #menu {
-    margin-left: auto;
-    margin-right: auto;
-}
-#links {
+    color: white;
     float: right;
 }
-#github {
+#menu:hover {
+    color: #c0c7d0;
+}
+nav ul {
+    list-style-type: none;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: inline-flex;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.3em;
+}
+nav a:hover{
     color: white;
 }
+#links {
+    display: inline-flex;
+    float: right;
+    color: white;
+}
+#links:hover{
+    color: #c0c7d0;
+}
 #wrapper {
-    width: 80%;
+    width: 90%;
     background-color: #C0C7D0;
     color: #041e42;
-    min-height: 50em;
+    min-height: 500px;
     margin-left: auto;
     margin-right: auto;
 }
 footer {
-    width: 80%;
+    width: 90%;
     min-height: 5em;
+    padding: 1em;
     background-color: #041e42;
     color: #C0C7D0;
     font-size: 1em;
-    margin: 0;
     margin-left: auto;
     margin-right: auto;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
 }
 p{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
 }
