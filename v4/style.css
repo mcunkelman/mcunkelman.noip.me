@@ -4,82 +4,97 @@
 *  File : style.css
 *******************************************/
 
-* {
-    margin: 0 0 0 0;
-    padding: 0;
-	box-sizing: border-box;
-}
-html {
-    width: 100%;
-}
-body {
+
+*{
     background-color: #424f61;
-    width: 100%;
-    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E0E3E7;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-nav {
+html{
     width: 100%;
+    min-height: 100%;
+}
+nav{
     background-color: #041e42;
+    color: #E0E3E7;
+    padding: 0.5em;
+    height: 4em;
+    width: 100%;
     display: inline-block;
 }
-#logo {
-    float: left;
-    display: inline-block;
+#logo{
+    display: inline;
+    margin: 0.5em;
+    background-color: inherit;
 }
-#logo img {
-    height: 3em;
-}
-#menu {
-    color: white;
+#menu{
+    display: inline;
     float: right;
+    margin: 0.5em;
+    background-color: #041e42;
+    color: #e0e3e7;
 }
-#menu:hover {
-    color: #c0c7d0;
+#menu:hover{
+    color: #A1ABB8;
 }
-nav ul {
+nav ul{
     list-style-type: none;
-}
-nav li {
-    display: inline-block;
-}
-nav a {
-    display: inline-flex;
-    text-decoration: none;
+    background-color: inherit;
     color: inherit;
-    font-size: 1.3em;
 }
-nav a:hover{
-    color: white;
+nav li{
+    background-color: inherit;
+    color: inherit;
+    display: inline;
+    width: 10em;
+    padding: 0.25em;
+    font-size: 1.5em;
+    margin-left: 2px;
+    margin-right: 2px;
 }
-#links {
-    display: inline-flex;
-    float: right;
-    color: white;
+nav li:hover{
+    color: #e0e3e7;
+    border-left: 2px solid #1cbd1a;
+    margin-left: 0;
+    border-right: 2px solid #1cbd1c;
+    margin-right: 0;
 }
-#links:hover{
-    color: #c0c7d0;
+nav a{
+    text-decoration: none;
+    background-color: inherit;
+    color: inherit;
 }
-#wrapper {
-    width: 90%;
-    background-color: #C0C7D0;
+nav i{
+    background-color: inherit;
+    color: inherit;
+}
+nav img{
+    height: 3em;
+    background-color: inherit;
+    color: inherit;
+}
+#wrapper{
+    background-color: #c0c7d0;
     color: #041e42;
-    min-height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-footer {
-    width: 90%;
-    min-height: 5em;
+    width: 100%;
+    min-height: 10em;
     padding: 1em;
-    background-color: #041e42;
-    color: #C0C7D0;
-    font-size: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
 }
-p{
-    padding-left: 2em;
-    padding-right: 2em;
+#wrapper h1{
+    background-color: #c0c7d0;
+    color: #041e42;
+}
+#wrapper p{
+    background-color: #c0c7d0;
+    color: #041e42;
+}
+footer{
+    background-color: #041e42;
+    color: #E0E3E7;
+    padding: 0.5em;
+    min-height: 2em;
+    width: 100%;
 }
