@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Metadata -->
+		<meta charset="utf-8">
+		<meta name="description" content="Matthew Cunkelman's Website">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="mcunkelman">
+		<meta name='date' content="May 2, 2019">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:title" content="Matthew Cunkelman's Website | mcunkelman">
+		<meta property="og:description" content="Cycle through the tabs to navigate each section and learn more about me.">
+		<meta property="og:type" content="Website">
+<!--		<meta property="og:image" content="./image/smann_logo/smann_thumbnail.png"> -->
+		<meta property="og:url" content="https://mcunkelman.noip.me/">
+		<!-- Website title in browser's tab -->
+		<title>mcunkelman</title>
+		<!-- Icon in browser's tab -->
+		<link rel="shortcut icon" href="./mcunkelman_logo/mcunkelman_mountain_logo_200x200.png" type="image/x-icon"/>
+		<!-- Load icons for using throughout the webpage -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/FortAwesome/Font-Awesome/master/css/all.css" media="screen"/>
+		<!-- Load overall styles -->
+		<link rel="stylesheet" type="text/css" href="./style.css" title="Styles" media="screen"/>
+		<!-- Load font styles -->
+		<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=fallback"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=fallback"/>
+		<!--<link rel="stylesheet" type="text/css" href="https://pagecdn.io/lib/easyfonts/fonts.css" media="screen"/>-->
+    <!-- Add Javascript library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Call Javascript functions -->
+    <script src="./javascript.js" defer></script>
+    # Adding Google Analytics
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135272516-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135272516-1');
+</script>
+
+
+	</head>
+
+
+<!-- This is the line where things are cleared -->
+<!-- #################################################################### -->
+<body>
+
+		<!-- Initial splash screen -->
+		<div id="splashScreen" class="splashScreen">
+			<div class="splashText">
+				<div class="firstLetter">m</div><div class="lastName">cunkelman</div>
+			</div>
+		</div>
+    <!-- Need to change colors in style.css -->
+
+		<!-- Navigation bar -->
+    <nav id="navigation">
+			<div class="mcunkelmanLogo">
+				<a href="./mcunkelman_logo/mcunkelman_f.png" target="_blank"><span>m</span>cunkelman</a>
+			</div>
+			<div class="navTabs">
+        <ul class="tabsList">
+          <li class="active"><a href="#home"><i class="fas fa-home"></i><span><span class="extraSpace">&ensp;</span>Home</span></a></li>
+          <li><a href="#profile"><i class="fas fa-user-alt"></i><span><span class="extraSpace">&ensp;</span>Profile</span></a></li>
+          <!-- I think I want to remove this one completely -->
+          <li><a href="#career"><i class="fas fa-briefcase"></i><span><span class="extraSpace">&ensp;</span>Career</span></a></li>
+          <!-- I want to replace career with career -->
+          <li><a href="#travel"><i class="fas fa-globe-americas"></i><span><span class="extraSpace">&ensp;</span>Travel</span></a></li>
+          <!-- I want to replace hobbies with travel -->
+          <li><a href="#recipes"><i class="fas fa-utensils"></i><span><span class="extraSpace">&ensp;</span>Recipes</span></a></li>
+        </ul>
+			</div>
+			<div class="tabLinks">
+				<div class="modalButton">
+					<button id="modalButton" title="My Résumé"><i class="fas fa-file-pdf"></i></button>
+          <!-- I need to update this to have my resume -->
+				</div>
+				<a href="https://www.linkedin.com/in/mcunkelman" target="_blank" title="My LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+				<a href="mailto:cunkelman.matthew@gmail.com" target="_blank" title='My Email&#10;&#10;Right-click and select "Copy email address" or "Copy shortcut" if you wish to copy the email address to your clipboard.'><i class="fas fa-envelope"></i></a>
+			</div>
+  	</nav>
+
+		<!-- The modal -->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modalContent">
+				<div class="modalHeader">
+					<h3>Résumé Versions</h3>
+					<span class="closeModal">&times;</span>
+				</div>
+				<div class="modalBody">
+					<a href="./mcunkelman_resume.pdf" class="targetBlank" target="_blank">Formatted PDF Version</a>
+					<a href="./mcunkelman_resume.pdf" class="targetDefault">Formatted PDF Version</a>
+					<a href="./mcunkelman_resume.pdf" class="targetBlank" target="_blank">Plain Text PDF Version</a>
+					<a href="./mcunkelman_resume.pdf" class="targetDefault">Plain Text PDF Version</a>
+          <!-- Resume location needs to go here -->
+				</div>
+				<div class="modalFooter">
+					<h3>*Choose from the options above</h3>
+				</div>
+			</div>
+		</div>
+
+		<div id="container" class="container">
+
+<!-- Home tab content -->
+      <div id="home" class="tab active">
+				<div class="tabContent">
+					<h3>
+						Hello, everyone!
+					</h3>
+					<div class="textWelcome">
+		        <p>
+              About Me:
+              Hello, my name is <b>Matthew Cunkelman</b> and this is my website v2.
+              <br><br>
+              I originally set out to build and host a site when I was working in the Oil and Gas industry.
+              I was curious to see what I could learn and figure out on my own.
+              I started by researching and then building a computer with Linux Ubuntu operating system.
+              After I had built a computer I wanted to know what else I could do, so I started looking into network configurations and converting this computer into a server.
+              The more time I spent working on my computer and exploring
+              (I have a Ubuntu install USB on my keychain because I had to wipe and start over so many times) the more I wanted to try.
+              Knowing that anything I did I could undo
+              (since this wan't my main or work computer, it had no critical files),
+              encouraged me to try anything I wanted.
+              Eventually I figured out how to host a live website, and I built a very simple site for myself.
+              I managed to build the skills to change careers, and I am now an Autonomous Systems Engineer for Uber ATG.
+              My site sat untouched for a while, while I pursued other learning opportunities.
+              But now with some help (From <b>Stephen Mann</b> <a href="https://smann.ddns.net">Visit his site here</a> ) I am rebuilding it to better showcase me, and the things I am passionate about.
+              I am building out tabs for me, my career, my travel (and places I still want to travel) as well as some of my favorite recipes
+              (I love to cook).
+              Take a look around, and feel free to reach out if you have questions.
+              <br><br>
+              I am utilizing GitHub to build this site and remotely push updates to my server, I also use Atom.io as my text editor.
+              <br><br>
+              I do self host, so occasionally there will be some outages, but I try to limit them to a few minutes here and there.
+		        </p>
+					</div>
+					<div>
+	        	<img class="welcomePic" src="./images/me_iceland.png" alt="[Welcoming Pic]">
+					</div>
+					<div class="textBottom">
+						<div class="textRecent">
+			        <p>
+			          Major Recent Changes
+							</p>
+		          <ul>
+		            <li>This is a complete overhaul of the site</li>
+		          </ul>
+						</div>
+						<div class="textSpacer"><br></div>
+						<div class="textUpdate">
+			        <p>
+			          Updates in the Future
+							</p>
+		          <ul>
+		            <li>I want to rebuild my travel site</li>
+								<li>I need to figure out how I want to host my recipes</li>
+		          </ul>
+						</div>
+					</div>
+	      </div>
+			</div>
+
+<!-- Profile tab content -->
+      <div id="profile" class="tab">
+				<div class="tabContent">
+	        <h3>
+						Biography
+					</h3>
+					<div class="textBiography">
+		        <p>
+              I am an engineer with over 8 years of professional experience between Autonomous Vehicles and the Oil and Gas industry.
+              <br><br>
+              I have spent the majority of my career in the oil and gas industry,
+              working as a Petroleum Engineer after obtaining a degree in Mechanical Engineering.
+              After 7 years as a Petroleum Engineer, I transitioned again to being an Autonomous Systems Engineer for UBER ATG.
+              Both transitions required adapting my existing skills as well as learning new ones.
+              Creating v1 of this site, was a part of teaching myself some of those new skills.
+              <br><br>
+              Throughout my career I have learned many new skills,
+              some were directly necessary for my day to day tasks, while others branched far outside my roles expectations.
+              I have had the privilege of working with a lot of unique people, with unique backgrounds and skill sets.
+              I have tried to take advantage of this when I can, to learn as much as possible, and it has made me a more well rounded and resourceful person.
+
+						</p>
+					</div>
+					<br>
+
+					<div class="profileTable">
+						<table class="aboutMe">
+							<tr class="rowTop">
+								<th class="tableIcon"><i class="fas fa-address-card"></i></th>
+								<th class="tableText">About Me</th>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableIcon"><i class="fas fa-file-signature"></i></td>
+								<td class="tableText">Matthew J. Cunkelman</td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableIcon"><i class="fas fa-university"></i></td>
+								<td class="tableText">Penn State University &ndash; University Park</td>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableIcon"><i class="fas fa-graduation-cap"></i></td>
+								<td class="tableText">Class of 2012</td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableIcon"><i class="fas fa-pencil-ruler"></i></td>
+								<td class="tableText">B.S. in Mechanical Engineering</td>
+							</tr>
+							<tr  class="rowOdd">
+								<td class="tableIcon"><i class="fas fa-school"></i></td>
+								<td class="tableText">Community College of Allegheny County</td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableIcon"><i class="fas fa-file-code"></i></td>
+								<td class="tableText">Persuing an A.S. in Software Development</td>
+							</tr>
+							<tr  class="rowOdd">
+								<td class="tableIcon"><i class="fas fa-map-marker-alt"></i></td>
+								<td class="tableText">Located in Pittsburgh, PA</td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableIcon"><i class="fas fa-phone-alt"></i></td>
+								<td class="tableText">+1 (724) 549-2382</td>
+							</tr>
+							<tr  class="rowOdd">
+								<td class="tableIcon"><i class="fas fa-envelope"></i></td>
+								<td class="tableText">cunkelman.matthew@gmail.com</td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableIcon"><i class="fab fa-linkedin"></i></td>
+								<td class="tableText">www.linkedin.com/in<br>/mcunkelman</td>
+							</tr>
+						</table>
+
+						<img class="profilePic" src="./images/Matt_Waterfall.png" alt="[Profile Pic]">
+
+						<table class="skills skillsDisappear">
+							<tr class="rowTop">
+								<th class="tableText">Quick Skills</th>
+								<th class="tableIcon"><i class="fas fa-star"></i></th>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableText">Mechanical/Petroleum/Autonomous Systems Engineering</td>
+								<td class="tableIcon"><i class="fas fa-drafting-compass"></i></td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableText">Computer Hardware</td>
+								<td class="tableIcon"><i class="fas fa-server"></i></td>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableText">Coding</td>
+								<td class="tableIcon"><i class="fas fa-code"></i></td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableText">Networking</td>
+								<td class="tableIcon"><i class="fas fa-network-wired"></i></td>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableText">Google Suite</td>
+								<td class="tableIcon"><i class="fab fa-google"></i></td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableText">Critical Thinking and Problem Solving</td>
+								<td class="tableIcon"><i class="fas fa-lightbulb"></i></td>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableText">System Requirements Development</td>
+								<td class="tableIcon"><i class="fas fa-sitemap"></i></td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableText">Cross Team Collaboration</td>
+								<td class="tableIcon"><i class="far fa-comments"></i></td>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableText">Leader / Mentor / Team Member / Independent Worker</td>
+								<td class="tableIcon"><i class="fas fa-user-friends"></i></td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableText">Open to New Things and Adaptable to New Industries</td>
+								<td class="tableIcon"><i class="fas fa-door-open"></i></td>
+							</tr>
+						</table>
+
+						<br>
+						<table class="skills skillsAppear">
+							<tr class="rowTop">
+								<th class="tableIcon"><i class="fas fa-star"></i></th>
+								<th class="tableText">Quick Skills</th>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableIcon"><i class="fas fa-file-alt"></i></td>
+								<td class="tableText">Technical Writing</td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableIcon"><i class="fas fa-laptop"></i></td>
+								<td class="tableText">Computer-Aided Design (CAD)</td>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableIcon"><i class="fas fa-code"></i></td>
+								<td class="tableText">Coding</td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableIcon"><i class="fas fa-drafting-compass"></i></td>
+								<td class="tableText">Nuclear / Mechanical / Petroleum Engineering</td>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableIcon"><i class="fab fa-microsoft"></i></td>
+								<td class="tableText">Microsoft Windows and Office Products</td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableIcon"><i class="fas fa-lightbulb"></i></td>
+								<td class="tableText">Critical Thinking and Problem Solving</td>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableIcon"><i class="fas fa-comment"></i></td>
+								<td class="tableText">Excellent Communication</td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableIcon"><i class="fas fa-infinity"></i></td>
+								<td class="tableText">Continuous Improvement</td>
+							</tr>
+							<tr class="rowOdd">
+								<td class="tableIcon"><i class="fas fa-user-friends"></i></td>
+								<td class="tableText">Leader / Mentor / Team Member / Independent Worker</td>
+							</tr>
+							<tr class="rowEven">
+								<td class="tableIcon"><i class="fas fa-door-open"></i></td>
+								<td class="tableText">Open to New Things and Adaptable to New Industries</td>
+							</tr>
+						</table>
+						<div class="footNote">
+							<p>
+								*Check out my Career tab to see a detailed version of my résumé and more professional information about me.
+							</p>
+						</div>
+					</div>
+
+	      </div>
+			</div>
+
+<!-- Career tab content -->
+      <div id="career" class="tab">
+				<div class="tabContent">
+					<h3>
+						Engineer with 8+ Years of Experience
+					</h3>
+
+					<div class="career">
+						<div class="uber">
+							<p>
+								<b>UBER ATG</b><br>
+								Autonomous Systems Engineer<br>
+							</p>
+							<p>
+								<a href="https://www.uber.com/us/en/atg/" target="_blank">
+									<img src="./Site_Files/company_logos/Uber_Logo_White_RGB.png" alt="[UBER ATG]">
+								</a>
+							</p>
+							<table class="jobBreakdownTable">
+								<tr>
+									<td class="jobPosition">Autonomous Systems Engineer</td>
+									<td class="jobDates">April 14, 2019 &ndash; Present</td>
+								</tr>
+							</table>
+							<div class="jobBreakdownSimplified">
+								<p>
+									Engineer<br>
+									<i>(April 14, 2019 &ndash; Present)</i><br>
+								</p>
+							</div>
+						</div>
+            <br>
+						<div class="eqt">
+							<p>
+								<b>EQT Production Co.</b><br>
+								Reservoir Optimization Engineer<br>
+							</p>
+							<p>
+								<a href="https://www.eqt.com/" target="_blank">
+									<img src="./Site_Files/company_logos/EQT_2020.png" alt="[EQT Logo]">
+								</a>
+							</p>
+							<table class="jobBreakdownTable">
+								<tr>
+									<td class="jobPosition">Reservoir Optimization Engineer</td>
+									<td class="jobDates">Sept. 14, 2015 &ndash; Jan. 7, 2019</td>
+								</tr>
+							</table>
+							<div class="jobBreakdownSimplified">
+								<p>
+									Engineer<br>
+									<i>(Sept. 14, 2015 &ndash; Jan. 7, 2019)</i><br>
+								</p>
+							</div>
+						</div>
+
+            <div class="halliburton">
+							<p>
+								<b>Halliburton Energy Services</b><br>
+								Technical Professional<br>
+							</p>
+							<p>
+								<a href="https://www.halliburton.com/en-US/default.html" target="_blank">
+									<img src="./Site_Files/company_logos/halliburton_logo.png" alt="[Halliburton Logo]">
+								</a>
+							</p>
+							<table class="jobBreakdownTable">
+								<tr>
+									<td class="jobPosition">Technical Professional (Engineer)</td>
+									<td class="jobDates">June 12, 2012 &ndash; Aug. 14, 2015</td>
+								</tr>
+
+							</table>
+							<div class="jobBreakdownSimplified">
+								<p>
+									Engineer<br>
+									<i>(June 12, 2012 &ndash; Aug. 14, 2015)</i><br>
+								</p>
+							</div>
+						</div>
+
+					</div>
+<!-- I am cutting the professional references section, since I am not actively looking
+					<h3>
+						Professional References
+					</h3>
+
+					<div class="career">
+						<div class="references">
+							<p class="reference1">
+								<b>Adam Shanks</b><br>
+								Lead Technical Professional<br>
+								Halliburton Energy Services, Inc.<br>
+								4999 East Pointe Dr.<br>
+								Zanesville, OH 43701<br>
+								Cell Phone: +1 (724) 549-2617<br>
+								Email: adam.shanks@halliburton.com<br>
+								<i>(Supervisor/Coworker at Halliburton)</i>
+							</p>
+							<p class="reference2">
+								<b>Matthew Cunkelman</b><br>
+								Autonomy Systems Engineer<br>
+								Uber Advanced Technologies Group<br>
+								3011 Smallman St.<br>
+								Pittsburgh, PA 15201<br>
+								Cell Phone: +1 (724) 549-2382<br>
+								Email: cunkelman.matthew@gmail.com<br>
+								<i>(Coworker at Halliburton)</i>
+							</p>
+						</div>
+						<div class="references">
+							<p class="reference3">
+								<b>Scot Sloan</b><br>
+								Electronics Technician <i>(Former)</i><br>
+								Halliburton Energy Services, Inc.<br>
+								4999 East Pointe Dr.<br>
+								Zanesville, OH 43701<br>
+								Cell Phone: +1 (405) 326-3935<br>
+								Email: scot.a.sloan@gmail.com<br>
+								<i>(Coworker at Halliburton)</i>
+							</p>
+							<p class="reference4">
+								<b>Robert Murtha</b><br>
+								President and Principal Engineer<br>
+								Murtech, Inc.<br>
+								820 Cromwell Park Dr.<br>
+								Glen Burnie, MD 21061<br>
+								Work Phone: +1 (410) 766-5335 x1001<br>
+								Email: bmurtha@murtech.us<br>
+								<i>(Supervisor at Murtech)</i>
+							</p>
+						</div>
+					</div>
+					<div class="footNote">
+						<p>
+							*I have more professional references available on request.
+						</p>
+					</div>
+-->
+					<hr>
+<!--
+					<h3>
+						My Résumé
+					</h3>
+          This is where my resume will go when it is complete -->
+<!--
+					<div class="myResume">
+						<a href="./mcunkelman_resume.pdf" class="targetBlank" target="_blank">Download Formatted PDF Version</a>
+						<a href="./mcunkelman_resume.pdf" class="targetDefault">Download Formatted PDF Version</a>
+					</div>
+
+					<div class="resume">
+						<h3 class="myName">
+							Stephen A. Mann
+						</h3>
+						<div class="resumeInfo">
+							www.linkedin.com/in/stephenarthurmann
+							<span class="hide">•</span><span class="show"></span>
+							+1 (703) 774-7834
+							<span class="hide">•</span><span class="show"></span>
+							smann.psu@gmail.com
+							<span class="hide">•</span><span class="show"></span>
+							Pittsburgh, PA 15201
+						</div>
+
+						<hr>
+
+						<div class="resumeSection">
+							<h2>
+								EDUCATION
+							</h2>
+							<p>
+								<span class="hideEducation">
+									Bachelor of Science degree in Nuclear Engineering, minor in Engineering Mechanics
+									<br>
+									The Pennsylvania State University &ndash; University Park, PA &ndash; Class of 2012
+								</span>
+								<span class="showEducation">
+									B.S. degree in Nuclear Engineering<br>
+									Minor in Engineering Mechanics<br>
+									Penn State University &ndash; Class of 2012
+								</span>
+							</p>
+						</div>
+
+						<hr>
+
+						<div class="resumeSection">
+							<h2>
+								EXPERIENCE
+							</h2>
+							<p>
+								<b>Halliburton<span class="hide"> Energy Services, Inc.</span></b><span class="rightText"><b>June 2014 &ndash; May 2019</b></span>
+								<br>
+								<i>Field Engineer<span class="hide"> (Technical Professional)</span></i><span class="rightText"><i>Zanesville, OH 43701<span class="hide"> and Homer City, PA 15748</span></i></span>
+							</p>
+							<ul>
+								<li>Identified extensive problems with documentation submitted to customers and informed management of the discovery with a recommended plan of corrective action that was implemented immediately.</li>
+								<li>Created and led a review team that analyzed the accuracy of all aforementioned documentation and received positive customer reception for the improvements.</li>
+								<li>Collaborated during continuous improvement events to design the next generation of Halliburton’s main Production Enhancement program with full equipment, inventory, and process integration.</li>
+								<li>Managed remote server system data and real-time remote operations of ongoing jobs.</li>
+								<li>Operated as lead engineer for high-profile jobs of experimental technologies and provided detailed analyses on their application, performance, results, and recommendations on modifications for future tests.</li>
+								<li>Supervised hundreds of jobs throughout the Northeast and ensured operations stayed on schedule and safely met environmental protocols and laws.</li>
+								<li>Served as the main field liaison between operations personnel and customer representatives to facilitate cooperation and timely and accurate communication.</li>
+								<li>Utilized CAD programs to create proper equipment placement within tight spaces.</li>
+								<li>Worked with personnel from various disciplines in preparing innovative technologies, updating procedures, and testing newly-developed chemicals and materials to enhance the output of formations.</li>
+								<li>Trained new engineers and crew members to efficiently and successfully run jobs on their own with knowledge of all job aspects.</li>
+								<li>Conducted on-site testing of various materials for quality assurance and any compatibility issues.</li>
+							</ul>
+							<p>
+								<b>Murtech, Inc.</b><span class="rightText"><b>June 2008 &ndash; June 2014</b></span>
+								<br>
+								<i>Engineer</i><span class="rightText"><i>Glen Burnie, MD 21061</i></span>
+							</p>
+							<ul class="lastList">
+								<li>Created 3D CAD models and coordinated resources for the company’s new proprietary product line for sea-based desalination utilizing wave energy.</li>
+								<li>Participated in the development of an environmental monitoring and sampling plan for the foregoing product line in response to requirements from the U.S. Army Corp of Engineers and the state of Maryland.</li>
+								<li>Modeled and presented a prototype for an enhancement of an existing CBRNE detection product for the Department of Defense (DoD), increasing product capability and durability while reducing field-carry size.</li>
+								<li>Diagnosed and resolved issues concerning the dry filter unit of a biological and chemical detection device for a DoD contract, reducing peak operating temperatures by over 50% and sound by 12db.</li>
+								<li>Incorporated 3D CAD modeling into various projects to facilitate the preparation of prototype specifications, designs, and material procurements, as well as guidance for prototype fabrication.</li>
+								<li>Utilized Microsoft Project to construct project plans, including key milestones, decision points, and budgeting.</li>
+							</ul>
+						</div>
+
+						<hr>
+
+						<div class="resumeSection">
+							<h2>
+								SKILLS
+							</h2>
+							<p>
+								I am proficient in the use of Rhinoceros 3D, AutoCAD, MS Office, and VBA Editor; I have experience with Abaqus and ANSYS finite element analysis tools, SolidWorks, MATLAB, and MS Project; and I am currently teaching myself coding in HTML and Python. I have also participated in Kaizen events and have training in continuous improvement processes.
+							</p>
+						</div>
+					</div>
+
+					<hr>
+
+					<h3>
+						Some 3D CAD Work Samples
+					</h3>
+					<figure>
+						<img class="blowerUnit" src="./image/work_related/blower.png" alt="[Blower Unit]">
+					</figure>
+					<figcaption>
+						*This was a blower unit created in Rhino 4.0 and rendered with Flamingo 1.1 raytracing. The parts are exploded to better show their attachment points.
+					</figcaption>
+					<br>
+					<figure>
+						<img class="facepiece" src="./image/work_related/facepiece.png" alt="[Facepiece]">
+					</figure>
+					<figcaption>
+						*This was a facepiece created in Rhino 4.0 and rendered with Rhino's default renderer in version 6.0 on March 16, 2020. I never fully rendered this back in the day when I had the raytracing plugins, and Rhino's default renderer isn't the greatest. The reason this only shows the facepiece's front and straps is because this was simply a representative model that didn't require the full hood around the head to be modeled at the time. However, I do feel it is a good representation of my first attempt at organic curve modeling back in 2010.
+					</figcaption>
+          <br>
+-->
+					<div class="footNote">
+						<p>
+							*This page is still a work in progress.
+						</p>
+					</div>
+
+	      </div>
+			</div>
+
+<!-- travel tab content -->
+      <div id="travel" class="tab">
+				<div class="tabContent">
+					<h3>
+						Travel
+					</h3>
+					<p>
+						I have been fortunate enough to travel to some really cool places,
+            and this tab is all about recording those adventures.
+						<br><br>
+						Check out the links below for more info on each of my trips.
+					</p>
+
+					<hr>
+
+          <h3>
+          <div class="box">
+            Alaska&nbsp;<img src="./images/flags/Flag_map_of_Alaska.png" alt="[Alaska Flag]">
+          </div>
+          </h3>
+          <p>
+            Summer 2015
+          </p>
+          <br>
+          <div class="coverPhoto">
+            <a href="./images/travel/Alaska/Alaska_Images_large/Matenuska Glacier.png" target="_blank">
+              <img src="./images/travel/Alaska/Alaska_Images_small/Matenuska Glacier.png" alt="[Alaska Cover Photo]">
+            </a>
+          </div>
+          <br>
+            <aside>
+							<button onclick="alaskaShowHide()">Show/Hide Alaska Details <i class="fas fa-caret-down"></i></button>
+						</aside>
+            <div id="alaskaShowHide" style="display:none">
+              <h3>
+                Map of my trip.
+              </h3>
+              <iframe src="https://www.google.com/maps/d/embed?mid=1-chZo1h7Zwqb-D1qh2gGRi9AQbJTGeyE"></iframe>
+
+              <br>
+              <br>
+
+              <p style="font-style:italic;font-size:15px">
+                We (my Dad and I) landed in the Anchorage International Airport,
+                where we were met by my Uncle Dean who lives in Alaska.
+                We then went and picked up the RV we would be using for this adventure.
+                From Anchorage we went North to Willow, AK (where my uncle has his cabin),
+                and we spent the first night there.
+                The following day we went out on 4x4's on some trails and visited the Goose Creek Tower
+                (also called the Dr. Seuss House) and had some spectacular views of Denali in the distance.
+                The following day we continued North,
+                past Talkeetna (it's really fun to say) and Cantwell to one of the entrance into McKinley Park.
+                The road was open all the way to the Savage River.
+                While in the park we did see several moose,
+                and ran into some people who said a bear had charged their car
+                (luckily we didn't have any issues like that). We then headed back South to Cantwell,
+                and spent the night camping along side the road.
+                The following morning we began crossing the Denali Highway, which was really just a gravel road.
+                What the road lacked in, well, road-ness (it apparently is a perfectly acceptable place to land a helicopter though),
+                it made up for in views. This is one of the most peaceful places I have ever been.
+                We stopped several times for small excursions (and picking the huckleberries that were everywhere)
+                We eventually reached Paxson, and then headed North past Summit Lake, and into an unused campground.
+                We did some hiking there without fully realizing just how long it stayed light out there.
+                At 11:30pm I thought it was still mid-afternoon.
+                The following day we headed South to Glennallen and then West to the Eureka Lodge for a
+                25 cent cup of coffee and some giant cinnamon rolls.
+                We continued West to the Matanuska Glacier
+                (a privately owned glacier that is open to explore).
+                We spent most of the afternoon hiking out onto the glacier,
+                and it was simultaneously one of the coolest and most terrifying things I have ever done,
+                I don’t know that I would ever do it again, but I highly recommend everyone should try it.
+                We then headed back through Anchorage (and saw a still operation Blockbuster)
+                and out onto the Kenai Peninsula all the way to the Homer Spit.
+                We were walking around the shops out on the dock when the earthquake hit,
+                a M 6.2 across the bay. To us it was only a slight roll in the ground,
+                at first I thought a boat had hit the dock, until I realized I was standing on the ground,
+                and people on both docks were looking around
+                (My uncle head later that people further away in Fairbanks had felt the ground move for almost 2 minutes).
+                We spent the night there, and the next day headed back up the coast to do some fishing
+                (the salmon were running).
+                We met up with a co-worker of my dads and spent the afternoon fishing in the pouring rain.
+                I managed to catch one that we later grilled and ate
+                (to this day, no "fresh" salmon has ever come close).
+                We headed back to Anchorage the next day to catch our flight home.
+                It was quite an adventure, and this little blurb doesn’t quite do it justice.
+              </p>
+
+              <br>
+              <aside>
+  							<button onclick="alaskaGalleryShowHide()">Show/Hide Alaska Gallery <i class="fas fa-caret-down"></i></button>
+  						</aside>
+
+                <div id="alaskaTravelGallery" style="display:none">
+                  <h3> Click on an image to see the full size version </h3>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/A lake ontop of an Ice Cube.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/A lake ontop of an Ice Cube.png" alt="A lake ontop of an Ice Cube.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/A Proper Use for Ice.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/A Proper Use for Ice.png" alt="A Proper Use for Ice.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/A Time to Reflect.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/A Time to Reflect.png" alt="A Time to Reflect.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Along the Denali Highway.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Along the Denali Highway.png" alt="Along the Denali Highway.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Big Cinnamon Rolls.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Big Cinnamon Rolls.png" alt="Big Cinnamon Rolls.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Big Open Spaces.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Big Open Spaces.png" alt="Big Open Spaces.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Clean Glacier Runoff.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Clean Glacier Runoff.png" alt="Clean Glacier Runoff.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Climbing the Outcrop.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Climbing the Outcrop.png" alt="Climbing the Outcrop.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Dad Needed a Break.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Dad Needed a Break.png" alt="Dad Needed a Break.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Dinner at 10-30.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Dinner at 10-30.png" alt="Dinner at 10-30.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Dr Suess House.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Dr Suess House.png" alt="Dr Suess House.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Earthquake.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Earthquake.png" alt="Earthquake.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Flying Out 1.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Flying Out 1.png" alt="Flying Out 1.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Flying Out 2.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Flying Out 2.png" alt="Flying Out 2.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Flying Out 3.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Flying Out 3.png" alt="Flying Out 3.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Flying Out 4.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Flying Out 4.png" alt="Flying Out 4.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Heading Down the Road.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Heading Down the Road.png" alt="Heading Down the Road.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Hidden Ice.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Hidden Ice.png" alt="Hidden Ice.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Homer Spit.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Homer Spit.png" alt="Homer Spit.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/I Caught a Fish.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/I Caught a Fish.png" alt="I Caught a Fish.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Ice Ice Baby.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Ice Ice Baby.png" alt="Ice Ice Baby.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Ice Spires.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Ice Spires.png" alt="Ice Spires.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/It was Good.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/It was Good.png" alt="It was Good.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Landing.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Landing.png" alt="Landing.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Making Our Way Back.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Making Our Way Back.png" alt="Making Our Way Back.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Marbled Ice.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Marbled Ice.png" alt="Marbled Ice.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Matenuska Glacier 2.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Matenuska Glacier 2.png" alt="Matenuska Glacier 2.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Matenuska Glacier.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Matenuska Glacier.png" alt="Matenuska Glacier.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Monahan Flat 1.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Monahan Flat 1.png" alt="Monahan Flat 1.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Monahan Flat 2.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Monahan Flat 2.png" alt="Monahan Flat 2.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Monahan Flat 3.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Monahan Flat 3.png" alt="Monahan Flat 3.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Moose in Denali.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Moose in Denali.png" alt="Moose in Denali.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/More along the Highway.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/More along the Highway.png" alt="More along the Highway.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/More Big Open Spaces.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/More Big Open Spaces.png" alt="More Big Open Spaces.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/More Homer.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/More Homer.png" alt="More Homer.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/More Ice (1).png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/More Ice (1).png" alt="More Ice (1).png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/More Ice.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/More Ice.png" alt="More Ice.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Mt Mclaren 2.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Mt Mclaren 2.png" alt="Mt Mclaren 2.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Mt Mclaren.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Mt Mclaren.png" alt="Mt Mclaren.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/My Kind of Interior Decorating.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/My Kind of Interior Decorating.png" alt="My Kind of Interior Decorating.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Nice Time for a Swim.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Nice Time for a Swim.png" alt="Nice Time for a Swim.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Ontop of the Outcrop.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Ontop of the Outcrop.png" alt="Ontop of the Outcrop.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Outcrop by the Savage River.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Outcrop by the Savage River.png" alt="Outcrop by the Savage River.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Panning for Gold.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Panning for Gold.png" alt="Panning for Gold.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Please and Thank You.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Please and Thank You.png" alt="Please and Thank You.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Reading is Hard.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Reading is Hard.png" alt="Reading is Hard.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Road to Home(er).png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Road to Home(er).png" alt="Road to Home(er).png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Savage River.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Savage River.png" alt="Savage River.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Should have left some Breadcrumbs.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Should have left some Breadcrumbs.png" alt="Should have left some Breadcrumbs.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Summit Lake 2.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Summit Lake 2.png" alt="Summit Lake 2.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Summit Lake.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Summit Lake.png" alt="Summit Lake.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/The Only Weather Forecast I Trust.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/The Only Weather Forecast I Trust.png" alt="The Only Weather Forecast I Trust.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/This Rounds on the House.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/This Rounds on the House.png" alt="This Rounds on the House.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Waking up to This.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Waking up to This.png" alt="Waking up to This.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Welcome to Denali.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Welcome to Denali.png" alt="Welcome to Denali.png"></a>
+                    <a href="./images/travel/Alaska/Alaska_Images_large/Welcome to the Ice Cube.png" target="_blank"><img src="./images/travel/Alaska/Alaska_Images_small/Welcome to the Ice Cube.png" alt="Welcome to the Ice Cube.png"></a>
+              <br>
+              <br>
+              <aside>
+  							<button onclick="alaskaShowHide()">Hide Alaska Details <i class="fas fa-caret-up"></i></button>
+  						</aside>
+            </div>
+          </div>
+
+          <hr>
+<!-- Start of Iceland Section -->
+          <h3>
+          <div class="box">
+            Iceland&nbsp;<img src="./images/flags/Flag-map_of_Iceland.png" alt="[Iceland Flag]">
+          </div>
+            <p>
+              September 2017
+            </p>
+          </h3>
+          <div class="coverPhoto">
+            <a href="./images/travel/Iceland/Iceland_Images_large/Svinafellsjokull-01.png" target="_blank">
+              <img src="./images/travel/Iceland/Iceland_Images_small/Svinafellsjokull-01.png" alt="[Iceland Cover Photo]">
+            </a>
+          </div>
+          <br>
+            <aside>
+              <button onclick="icelandShowHide()">Show/Hide Iceland Details <i class="fas fa-caret-down"></i></button>
+            </aside>
+            <div id="icelandShowHide" style="display:none">
+              <h3>
+                Map of my trip.
+              </h3>
+              <iframe src="https://www.google.com/maps/d/embed?mid=1rSVDCJztIVuAtcIH_BpLiC151MVVG318"></iframe>
+
+              <br>
+              <br>
+
+              <p style="font-style:italic;font-size:15px">
+<!-- Writeup goes here -->
+
+              </p>
+              <br>
+              <aside>
+                <button onclick="icelandGalleryShowHide()">Show/Hide Iceland Gallery <i class="fas fa-caret-down"></i></button>
+              </aside>
+
+                <div id="icelandTravelGallery" style="display:none">
+                  <h3> Click on an image to see the full size version </h3>
+<!-- Gallery goes here -->
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Between the Plates 2.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Between the Plates 2.png" alt="Between the Plates 2.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Between the Plates.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Between the Plates.png" alt="Between the Plates.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Eastern_Iceland-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Eastern_Iceland-01.png" alt="Eastern_Iceland-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Eastern_Iceland-02.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Eastern_Iceland-02.png" alt="Eastern_Iceland-02.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Eastern_Iceland-03.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Eastern_Iceland-03.png" alt="Eastern_Iceland-03.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Eastern_Iceland-04.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Eastern_Iceland-04.png" alt="Eastern_Iceland-04.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Glymur Waterfall.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Glymur Waterfall.png" alt="Glymur Waterfall.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Hellnar-2.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Hellnar-2.png" alt="Hellnar-2.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Hellnar.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Hellnar.png" alt="Hellnar.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Hoffellsjökull-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Hoffellsjökull-01.png" alt="Hoffellsjökull-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Hverfjall.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Hverfjall.png" alt="Hverfjall.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Icelandic_Highlands-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Icelandic_Highlands-01.png" alt="Icelandic_Highlands-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Icelandic_Highlands-02.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Icelandic_Highlands-02.png" alt="Icelandic_Highlands-02.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Icelandic_Highlands-03.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Icelandic_Highlands-03.png" alt="Icelandic_Highlands-03.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Icelandic_Highlands-04.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Icelandic_Highlands-04.png" alt="Icelandic_Highlands-04.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Icelandic_Highlands-05.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Icelandic_Highlands-05.png" alt="Icelandic_Highlands-05.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/IMG_6834.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/IMG_6834.png" alt="IMG_6834.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Jökulsárlón-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Jökulsárlón-01.png" alt="Jökulsárlón-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Jökulsárlón-02.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Jökulsárlón-02.png" alt="Jökulsárlón-02.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Jökulsárlón-03.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Jökulsárlón-03.png" alt="Jökulsárlón-03.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Jökulsárlón-04.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Jökulsárlón-04.png" alt="Jökulsárlón-04.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Jökulsárlón-05.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Jökulsárlón-05.png" alt="Jökulsárlón-05.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Kirkjufell Mountain.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Kirkjufell Mountain.png" alt="Kirkjufell Mountain.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Me.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Me.png" alt="Me.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Northern_Iceland-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Northern_Iceland-01.png" alt="Northern_Iceland-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Northern_Iceland-02.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Northern_Iceland-02.png" alt="Northern_Iceland-02.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Norwegian Sea-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Norwegian Sea-01.png" alt="Norwegian Sea-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Oh Sheep.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Oh Sheep.png" alt="Oh Sheep.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Past the Gate.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Past the Gate.png" alt="Past the Gate.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Reynisdrangar-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Reynisdrangar-01.png" alt="Reynisdrangar-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Reynisdrangar-02.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Reynisdrangar-02.png" alt="Reynisdrangar-02.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Selfoss-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Selfoss-01.png" alt="Selfoss-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Selfoss-02.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Selfoss-02.png" alt="Selfoss-02.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Silfra.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Silfra.png" alt="Silfra.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Southern_Iceland-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Southern_Iceland-01.png" alt="Southern_Iceland-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Svínafellsjökull-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Svínafellsjökull-01.png" alt="Svínafellsjökull-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Svínafellsjökull-02.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Svínafellsjökull-02.png" alt="Svínafellsjökull-02.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/The Bloody Gate.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/The Bloody Gate.png" alt="The Bloody Gate.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/The Foss.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/The Foss.png" alt="The Foss.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/The Lagoon.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/The Lagoon.png" alt="The Lagoon.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Thingvellir Meadow.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Thingvellir Meadow.png" alt="Thingvellir Meadow.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Time for a Swim.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Time for a Swim.png" alt="Time for a Swim.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Vatnajökull_National_Park-01.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Vatnajökull_National_Park-01.png" alt="Vatnajökull_National_Park-01.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Vatnajökull_National_Park-02.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Vatnajökull_National_Park-02.png" alt="Vatnajökull_National_Park-02.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Vatnajökull_National_Park-03.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Vatnajökull_National_Park-03.png" alt="Vatnajökull_National_Park-03.png"></a>
+                    <a href="./images/travel/Iceland/Iceland_Images_large/Watch Out for Dragons.png" target="_blank"><img src="./images/travel/Iceland/Iceland_Images_small/Watch Out for Dragons.png" alt="Watch Out for Dragons.png"></a>
+
+                  <br>
+                  <br>
+                  <aside>
+      							<button onclick="icelandShowHide()">Hide Iceland Details <i class="fas fa-caret-up"></i></button>
+      						</aside>
+                </div>
+              </div>
+
+
+
+
+          <hr>
+<!-- Start of Australia/New Zealand -->
+          <h3>
+          <div class="box">
+            Australia&nbsp;<img src="./images/flags/Flag-map_of_Australia.png" alt="[Australia Flag]">&nbsp;
+            / New Zealand&nbsp;<img src="./images/flags/Flag_map_of_New_Zealand.png" alt="[New Zealand Flag]">
+          </div>
+            <p>
+              July 2018
+            </p>
+          </h3>
+          <div class="coverPhoto">
+            <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-07.png" target="_blank">
+              <img src="./images/travel/NewZealand/NZ_cover.png" alt="[AUS/NZ Cover Photo]">
+            </a>
+          </div>
+          <br>
+            <aside>
+              <button onclick="nzShowHide()">Show/Hide Australia / New Zealand Details <i class="fas fa-caret-down"></i></button>
+            </aside>
+            <div id="nzShowHide" style="display:none">
+              <h3>
+                Map of my trip.
+              </h3>
+              <iframe src="https://www.google.com/maps/d/embed?mid=1ltHO5S258DB7ukIHKwXd-7s3kzVlVg4h"></iframe>
+
+              <br>
+              <br>
+
+              <p style="font-style:italic;font-size:15px">
+<!-- Writeup goes here -->
+
+              </p>
+              <br>
+              <aside>
+                <button onclick="nzGalleryShowHide()">Show/Hide Australia / New Zealand Gallery <i class="fas fa-caret-down"></i></button>
+              </aside>
+
+                <div id="nzTravelGallery" style="display:none">
+                  <h3> Click on an image to see the full size version </h3>
+<!-- Gallery goes here -->
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Akaroa_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Akaroa_1.png" alt="Akaroa_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Akaroa_2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Akaroa_2.png" alt="Akaroa_2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Albatross_Chick_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Albatross_Chick_1.png" alt="Albatross_Chick_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Albatross-1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Albatross-1.png" alt="Albatross-1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Albatross-Flying-1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Albatross-Flying-1.png" alt="Albatross-Flying-1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Albatross-Flying-2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Albatross-Flying-2.png" alt="Albatross-Flying-2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Albatross-Flying-3.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Albatross-Flying-3.png" alt="Albatross-Flying-3.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Albatross-Flying-4.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Albatross-Flying-4.png" alt="Albatross-Flying-4.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Albatross-Flying-5.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Albatross-Flying-5.png" alt="Albatross-Flying-5.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Albatross-Flying-6.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Albatross-Flying-6.png" alt="Albatross-Flying-6.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Albatross-Flying-7.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Albatross-Flying-7.png" alt="Albatross-Flying-7.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Albatross-Flying-8.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Albatross-Flying-8.png" alt="Albatross-Flying-8.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Baldwin_Street-1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Baldwin_Street-1.png" alt="Baldwin_Street-1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Baldwin_Street-2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Baldwin_Street-2.png" alt="Baldwin_Street-2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Buried_Village_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Buried_Village_1.png" alt="Buried_Village_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Cook_Strait_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Cook_Strait_1.png" alt="Cook_Strait_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Hobbiton_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Hobbiton_1.png" alt="Hobbiton_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Hobbiton_2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Hobbiton_2.png" alt="Hobbiton_2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Hooker_Valley-1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Hooker_Valley-1.png" alt="Hooker_Valley-1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Hooker_Valley-2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Hooker_Valley-2.png" alt="Hooker_Valley-2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Hooker_Valley-3.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Hooker_Valley-3.png" alt="Hooker_Valley-3.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Kea_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Kea_1.png" alt="Kea_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Kea_2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Kea_2.png" alt="Kea_2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Lake_Wakatipu-01.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Lake_Wakatipu-01.png" alt="Lake_Wakatipu-01.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Matt_Waterfall.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Matt_Waterfall.png" alt="Matt_Waterfall.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-01.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-01.png" alt="Milford_Sound-01.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-02.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-02.png" alt="Milford_Sound-02.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-03.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-03.png" alt="Milford_Sound-03.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-04.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-04.png" alt="Milford_Sound-04.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-05 (1).png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-05 (1).png" alt="Milford_Sound-05 (1).png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-05.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-05.png" alt="Milford_Sound-05.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-06.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-06.png" alt="Milford_Sound-06.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-07.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-07.png" alt="Milford_Sound-07.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-08.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-08.png" alt="Milford_Sound-08.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-09.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-09.png" alt="Milford_Sound-09.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-10.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-10.png" alt="Milford_Sound-10.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-11.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-11.png" alt="Milford_Sound-11.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-12.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-12.png" alt="Milford_Sound-12.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-13.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-13.png" alt="Milford_Sound-13.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-14.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-14.png" alt="Milford_Sound-14.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-15.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-15.png" alt="Milford_Sound-15.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Milford_Sound-16.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Milford_Sound-16.png" alt="Milford_Sound-16.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Our_Seats.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Our_Seats.png" alt="Our_Seats.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Palm_Beach_Lighthouse_2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Palm_Beach_Lighthouse_2.png" alt="Palm_Beach_Lighthouse_2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Palm_Beach_Lighthouse.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Palm_Beach_Lighthouse.png" alt="Palm_Beach_Lighthouse.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Passing_By.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Passing_By.png" alt="Passing_By.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Penguin-1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Penguin-1.png" alt="Penguin-1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Queenston-03.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Queenston-03.png" alt="Queenston-03.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Queenstown-01.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Queenstown-01.png" alt="Queenstown-01.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Queenstown-02.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Queenstown-02.png" alt="Queenstown-02.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Queenstown-04.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Queenstown-04.png" alt="Queenstown-04.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Road_to_Milford_Sound-01.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Road_to_Milford_Sound-01.png" alt="Road_to_Milford_Sound-01.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Road_to_Milford_Sound-02.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Road_to_Milford_Sound-02.png" alt="Road_to_Milford_Sound-02.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Road_to_Milford_Sound-03.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Road_to_Milford_Sound-03.png" alt="Road_to_Milford_Sound-03.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Road_to_Milford_Sound-04.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Road_to_Milford_Sound-04.png" alt="Road_to_Milford_Sound-04.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Road_to_Milford_Sound-06.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Road_to_Milford_Sound-06.png" alt="Road_to_Milford_Sound-06.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Road_to_Milford_Sound-07.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Road_to_Milford_Sound-07.png" alt="Road_to_Milford_Sound-07.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_1.png" alt="Southern_Alps_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_Arthurs_Pass_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_Arthurs_Pass_1.png" alt="Southern_Alps_Arthurs_Pass_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_Arthurs_Pass_2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_Arthurs_Pass_2.png" alt="Southern_Alps_Arthurs_Pass_2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_Arthurs_Pass_3.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_Arthurs_Pass_3.png" alt="Southern_Alps_Arthurs_Pass_3.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_Arthurs_Pass_4.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_Arthurs_Pass_4.png" alt="Southern_Alps_Arthurs_Pass_4.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_Arthurs_Pass_5.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_Arthurs_Pass_5.png" alt="Southern_Alps_Arthurs_Pass_5.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_Arthurs_Pass_6.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_Arthurs_Pass_6.png" alt="Southern_Alps_Arthurs_Pass_6.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_Arthurs_Pass_7.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_Arthurs_Pass_7.png" alt="Southern_Alps_Arthurs_Pass_7.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_Otira_Viaduct_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_Otira_Viaduct_1.png" alt="Southern_Alps_Otira_Viaduct_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_Otira_Viaduct_2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_Otira_Viaduct_2.png" alt="Southern_Alps_Otira_Viaduct_2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps_Otira_Viaduct_3.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps_Otira_Viaduct_3.png" alt="Southern_Alps_Otira_Viaduct_3.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/SOuthern_Alps_Otira_Viaduct_4.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/SOuthern_Alps_Otira_Viaduct_4.png" alt="SOuthern_Alps_Otira_Viaduct_4.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Arthurs_Pass-8.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Arthurs_Pass-8.png" alt="Southern_Alps-Arthurs_Pass-8.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Arthurs_Pass-10.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Arthurs_Pass-10.png" alt="Southern_Alps-Arthurs_Pass-10.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Arthurs_Pass-11.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Arthurs_Pass-11.png" alt="Southern_Alps-Arthurs_Pass-11.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Arthurs_Pass-12.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Arthurs_Pass-12.png" alt="Southern_Alps-Arthurs_Pass-12.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Arthurs_Pass-13.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Arthurs_Pass-13.png" alt="Southern_Alps-Arthurs_Pass-13.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Arthurs_Pass-Devils_Punchbowl-1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Arthurs_Pass-Devils_Punchbowl-1.png" alt="Southern_Alps-Arthurs_Pass-Devils_Punchbowl-1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Arthurs_Pass-Devils_Punchbowl-2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Arthurs_Pass-Devils_Punchbowl-2.png" alt="Southern_Alps-Arthurs_Pass-Devils_Punchbowl-2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Arthurs_Pass-Devils_Punchbowl-3.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Arthurs_Pass-Devils_Punchbowl-3.png" alt="Southern_Alps-Arthurs_Pass-Devils_Punchbowl-3.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Arthurs_Pass-Me-1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Arthurs_Pass-Me-1.png" alt="Southern_Alps-Arthurs_Pass-Me-1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/SOuthern_Alps-Arthurs_Pass-Me-2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/SOuthern_Alps-Arthurs_Pass-Me-2.png" alt="SOuthern_Alps-Arthurs_Pass-Me-2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Arthurs_Pass-Zannah-1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Arthurs_Pass-Zannah-1.png" alt="Southern_Alps-Arthurs_Pass-Zannah-1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Southern_Alps-Ski_Resort_Road-1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Southern_Alps-Ski_Resort_Road-1.png" alt="Southern_Alps-Ski_Resort_Road-1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-1.png" alt="Stars-1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-2.png" alt="Stars-2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-3.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-3.png" alt="Stars-3.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-4.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-4.png" alt="Stars-4.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-5.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-5.png" alt="Stars-5.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-6.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-6.png" alt="Stars-6.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-7.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-7.png" alt="Stars-7.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-8.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-8.png" alt="Stars-8.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-9.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-9.png" alt="Stars-9.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-10.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-10.png" alt="Stars-10.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-11.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-11.png" alt="Stars-11.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Stars-12.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Stars-12.png" alt="Stars-12.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Sydney_Harbor_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Sydney_Harbor_1.png" alt="Sydney_Harbor_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Sydney_Operahouse_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Sydney_Operahouse_1.png" alt="Sydney_Operahouse_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Sydney_Operahouse_2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Sydney_Operahouse_2.png" alt="Sydney_Operahouse_2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/SYdney_Operahouse_3.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/SYdney_Operahouse_3.png" alt="SYdney_Operahouse_3.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Tongariro_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Tongariro_1.png" alt="Tongariro_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Tongariro_2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Tongariro_2.png" alt="Tongariro_2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Tongariro_3.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Tongariro_3.png" alt="Tongariro_3.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Tongariro_Map.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Tongariro_Map.png" alt="Tongariro_Map.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Wanaka-01.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Wanaka-01.png" alt="Wanaka-01.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Wanaka-Tree-01.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Wanaka-Tree-01.png" alt="Wanaka-Tree-01.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Wanaka-Tree-02.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Wanaka-Tree-02.png" alt="Wanaka-Tree-02.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Wellington_Harbor_1.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Wellington_Harbor_1.png" alt="Wellington_Harbor_1.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Wellington_Harbor_2.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Wellington_Harbor_2.png" alt="Wellington_Harbor_2.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Wellington_Harbor_3.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Wellington_Harbor_3.png" alt="Wellington_Harbor_3.png"></a>
+                  <a href="./images/travel/NewZealand/New_Zealand_Images_large/Zannah_Waterfall.png" target="_blank"><img src="./images/travel/NewZealand/New_Zealand_Images_small/Zannah_Waterfall.png" alt="Zannah_Waterfall.png"></a>
+
+              <br>
+              <br>
+              <aside>
+                <button onclick="nzShowHide()">Hide Australia / New Zealand Details <i class="fas fa-caret-up"></i></button>
+              </aside>
+              </div>
+              </div>
+
+
+          <hr>
+<!-- Start of Wyoming Section -->
+          <h3>
+          <div class="box">
+            Wyoming&nbsp;<img src="./images/flags/Flag-map_of_Wyoming.png" alt="[Wyoming Flag]">
+          </div>
+            <p>
+              August 2019
+            </p>
+          </h3>
+          <div class="coverPhoto">
+            <a href="./images/travel/Wyoming/Wyoming_Images_large/Tetons_4.png" target="_blank">
+              <img src="./images/travel/Wyoming/Wyoming_cover.png" alt="[Wyoming Cover Photo]">
+            </a>
+          </div>
+
+          <br>
+            <aside>
+              <button onclick="wyShowHide()">Show/Hide Wyoming Details <i class="fas fa-caret-down"></i></button>
+            </aside>
+            <div id="wyShowHide" style="display:none">
+              <h3>
+                Incomplete Map of my trip.
+              </h3>
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1GwFW-rEhHQ3ogGgls6n_g0hIkteanBdu"></iframe>
+<!-- I need the Wyoming Map -->
+              <br>
+              <br>
+
+              <p style="font-style:italic;font-size:15px">
+<!-- Writeup goes here -->
+
+              </p>
+              <br>
+              <aside>
+                <button onclick="wyGalleryShowHide()">Show/Hide Wyoming Gallery <i class="fas fa-caret-down"></i></button>
+              </aside>
+
+                <div id="wyTravelGallery" style="display:none">
+                  <h3> Click on an image to see the full size version </h3>
+<!-- Gallery goes here -->
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Beer_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Beer_1.png" alt="Beer_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Blue_Heron_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Blue_Heron_1.png" alt="Blue_Heron_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Cooling Off.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Cooling Off.png" alt="Cooling Off.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/fire_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/fire_1.png" alt="fire_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/fire_2.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/fire_2.png" alt="fire_2.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Grand_Canyon_of_Yellowstone_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Grand_Canyon_of_Yellowstone_1.png" alt="Grand_Canyon_of_Yellowstone_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Grand_Prismatic_Spring_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Grand_Prismatic_Spring_1.png" alt="Grand_Prismatic_Spring_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Grand_Prismatic_Spring_2.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Grand_Prismatic_Spring_2.png" alt="Grand_Prismatic_Spring_2.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Jackson_Hole_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Jackson_Hole_1.png" alt="Jackson_Hole_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Jackson_Hole_2.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Jackson_Hole_2.png" alt="Jackson_Hole_2.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Jackson_Hole_3.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Jackson_Hole_3.png" alt="Jackson_Hole_3.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Lily_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Lily_1.png" alt="Lily_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Mamoth_Hot_Springs_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Mamoth_Hot_Springs_1.png" alt="Mamoth_Hot_Springs_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Mamoth_Hot_Springs_2.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Mamoth_Hot_Springs_2.png" alt="Mamoth_Hot_Springs_2.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Mamoth_Hot_Springs_4.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Mamoth_Hot_Springs_4.png" alt="Mamoth_Hot_Springs_4.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Moose_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Moose_1.png" alt="Moose_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Sand_Dunes_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Sand_Dunes_1.png" alt="Sand_Dunes_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Sand_Dunes_2.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Sand_Dunes_2.png" alt="Sand_Dunes_2.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Tetons_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Tetons_1.png" alt="Tetons_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Tetons_2.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Tetons_2.png" alt="Tetons_2.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Tetons_3.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Tetons_3.png" alt="Tetons_3.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Tetons_4.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Tetons_4.png" alt="Tetons_4.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Yellowstone_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Yellowstone_1.png" alt="Yellowstone_1.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Yellowstone_2.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Yellowstone_2.png" alt="Yellowstone_2.png"></a>
+                    <a href="./images/travel/Wyoming/Wyoming_Images_large/Yellowstone_Lake_1.png" target="_blank"><img src="./images/travel/Wyoming/Wyoming_Images_small/Yellowstone_Lake_1.png" alt="Yellowstone_Lake_1.png"></a>
+
+                  <br>
+                  <br>
+                  <aside>
+                    <button onclick="wyShowHide()">Hide Wyoming Details <i class="fas fa-caret-up"></i></button>
+                  </aside>
+                  </div>
+                  </div>
+
+          <hr>
+
+          <h3>
+            Places on my Bucket List:
+          </h3>
+          <br>
+          <p>
+            <ul>
+              <li>Patagonia - South America</li>
+              <li>Banff - Canada</li>
+              <li>Norway</li>
+              <li>Germany/Switzerland/Austria</li>
+
+              </ul>
+          </p>
+
+	      </div>
+			</div>
+
+<!-- recipes tab content -->
+      <div id="recipes" class="tab">
+				<div class="tabContent">
+          <h3>
+            This page is under construction.
+          </h3>
+
+				</div>
+			</div>
+
+<!-- Footer portion -->
+			<footer class="infoFooter">
+				<div>
+					<h1>M<span>atthew</span> C<span>unkelman</span></h1>
+					<h2>m<span>cunkelman</span></h2>
+				</div>
+				<div>
+					<div class="modalButton">
+						<button id="modalButton2"><i class="fas fa-file-pdf"></i><span> Résumé</span></button>
+					</div>
+					<a href="https://www.linkedin.com/in/mcunkelman" target="_blank"><i class="fab fa-linkedin"></i><span> LinkedIn</span></a>
+					<a href="mailto:cunkelman.matthew@gmail.com" target="_blank" title='Right-click and select "Copy email address" or "Copy shortcut" if you wish to copy the email address to your clipboard.'><i class="fas fa-envelope"></i><span> Email</span></a>
+				</div>
+			</footer>
+
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,1007 @@
+
+/* Reset default HTML settings */
+/* Using https://htmlcolorcodes.com/color-picker/ for color schemes */
+/* PSU blue #041e42 */
+/* PSU blue tones (plus grey)
+		#041e42 -Nav Bar
+		#132a4a
+		#233651
+		#324359
+		#424f61 -Site Background
+		#515b68
+		#616770
+		#707378 */
+
+/* PSU blue tints (plus white)
+		#041e42
+		#233a5a
+		#435671
+		#627289
+		#828fa1
+		#a1abb8
+		#c0c7d0
+		#e0e3e7 */
+
+/* Logo Green #52C32F */
+
+/* Using fontawesome.com for logos */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Animation effects */
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	3% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes fadeOut {
+	0% { opacity: 1; z-index: 10; }
+	100% { opacity: 0; z-index: -1; }
+}
+@keyframes slideDown {
+	0% { margin-top: -40px; }
+	3% { margin-top: -40px; }
+	100% { margin-top: 40px; }
+}
+@keyframes slideRight {
+	0% { margin-right: 45px; }
+	3% { margin-right: 45px; }
+  100% { margin-right: 0px; }
+}
+@keyframes slideLeft {
+	0% { margin-left: 45px; }
+	3% { margin-left: 45px; }
+  100% { margin-left: 0px; }
+}
+
+/* Set the standards for the whole document */
+html {
+	background: #424f61;
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Arimo, Arial, sans-serif;
+	font-size: 15px;
+}
+
+/* Set the area for all the content */
+body {
+	height: 100%;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	background-color: #424f61;
+	/* background-image: url("./image/background.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center; */
+	/* background-image: linear-gradient(#041e42, white); */
+}
+
+/* Style a splash screen */
+.splashScreen {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #424f61; /* This is a modified tone of PSU blue (+grey) */
+	font-size: 90px;
+}
+.splashText {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: inline-flex;
+	width: 100%;
+	pointer-events: none;
+	justify-content: center;
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Arimo, Arial, sans-serif;
+}
+.splashText .firstLetter {
+	position: relative; /* Required for IE11 fading */
+	display: flex;
+	color: #52c32f; /* This is logo green */
+}
+.splashText .lastName {
+	position: relative;  /* Required for IE11 fading */
+	display: flex;
+	color: #a1abbb; /* This is a modified tint of PSU blue (+white) */
+}
+
+/* Create animation for the splash screen */
+.splashText {
+	animation:
+	fadeIn 0.75s ease-in 0s 1 forwards,
+	fadeOut 0.5s ease-out 1.5s 1 forwards;
+	will-change: auto;
+}
+.splashText .firstLetter {
+	animation:
+		slideRight 2s linear 0s 1 forwards;
+	will-change: auto;
+}
+.splashText .lastName {
+	animation:
+		slideLeft 2s linear 0s 1 forwards;
+	will-change: auto;
+}
+.splashScreen {
+	animation: fadeOut 0.25s ease-in-out 2s 1 forwards;
+}
+
+/* Style the overall navigation bar */
+nav {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	display: none; /* For initial splash screen */
+	overflow: hidden;
+	height: 60px;
+	width: 100%;
+	box-shadow: 0 0 7px #041e42; /* PSU Blue */
+	background-color: #041e42; /* PSU Blue */
+	justify-content: space-between;
+	font-size: 1rem;
+	/* background-color: transparent; */
+}
+
+nav div {
+	display: inline-flex;
+	align-items: center;
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Arimo, Arial, sans-serif;
+	font-weight: 500;
+}
+
+/* Style the text smann logo */
+nav .mcunkelmanLogo a {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-55%); /* Used to center text vertically since there aren't any tall lowercase letters */
+	/* animation: fadeIn 0.2s ease-in 0s 1 forwards; */
+	margin-left: 1.25rem;
+	padding: 0;
+  font-size: 1.75rem;
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #a1abbb;
+}
+/* Make the "s" in text smann logo a different color */
+nav .mcunkelmanLogo a span {
+  color: #52c32f;
+}
+
+/* Style the actual tabs */
+nav a {
+  position: relative;
+  margin: 0;
+  padding: 0.95rem 0.75rem;
+	text-decoration: none;
+	letter-spacing: 1px;
+  color: #e0e3e7;
+}
+
+/* Make the tabs display in a row */
+nav ul {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: inline-flex;
+	height: 60px;
+	margin-left: 8.75rem;
+	align-items: center;
+}
+
+/* Remove bullets from tabs and style them */
+nav ul li {
+  margin: 0 0.2rem;
+  padding: 0.5rem 0;
+  list-style: none;
+}
+
+/* Create animation for each tab
+nav ul li:nth-child(1) {
+	animation: fadeIn 0.2s ease-in 0s 1 forwards;
+}
+nav ul li:nth-child(2) {
+	animation: fadeIn 0.4s ease-in 0s 1 forwards;
+}
+nav ul li:nth-child(3) {
+	animation: fadeIn 0.6s ease-in 0s 1 forwards;
+}
+nav ul li:nth-child(4) {
+	animation: fadeIn 0.8s ease-in 0s 1 forwards;
+}
+nav ul li:nth-child(5) {
+	animation: fadeIn 1.0s ease-in 0s 1 forwards;
+}
+*/
+
+/* Remove extra space at the end of the last link
+nav ul li a:last-child {
+  margin-right: 0;
+}
+*/
+
+/* Style the lines that appears when hovering */
+nav ul li a::before,
+nav ul li a::after {
+	content: '';
+	position: absolute;
+  left: 0;
+	transform: scaleX(0);
+	transition: all 0.25s;
+	width: 100%;
+	height: 2px;
+	background-color: #52C32F; /* Logo Green */
+}
+/* Line comes in from left on the top */
+nav ul li a::before {
+	top: 0;
+	transform-origin: left;
+}
+/* Line comes in from right on the bottom */
+nav ul li a::after {
+	bottom: 0;
+	transform-origin: right;
+}
+/* Style for having lines show up on hover */
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+	transform: scaleX(1);
+}
+
+/* Tab active state */
+.active {
+  display: block !important; /* !important is needed for the initial tab to show up on refresh */
+}
+.active a {
+  color: #041e42;
+}
+body .tabsList li.active {
+	border-radius: 0.75rem;
+  background-color: #c0c7d0;
+}
+
+nav .tabLinks {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+nav .tabLinks a {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: inline-flex;
+	height: 60px;
+	margin: 0;
+	padding: 0.625rem;
+	align-items: center;
+}
+nav .tabLinks a:last-child {
+	margin-right: 1rem;
+}
+nav .tabLinks i {
+	font-size: 1.25rem;
+}
+
+.modalButton {
+	position: relative;
+	float: right;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 60px;
+	margin: 0;
+	align-items: center;
+	cursor: pointer;
+}
+.modalButton button {
+	position: relative;
+	height: 60px;
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	padding: 0.625rem;
+	background-color: transparent;
+  color: #e0e3e7;
+}
+
+	/* The Modal (background) */
+.modal {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+	overflow: auto;
+	margin: 0;
+}
+
+/* Modal Content */
+.modalContent {
+  position: relative;
+	width: 90%;
+	max-width: 400px;
+	display: block;
+  margin: 0 auto;
+	margin-top: 80px;
+  padding: 0;
+  box-shadow: 0 0 5px #041e42;
+	background-color: #c0c7d0; /* Pop up box for resume formats */
+  animation-name: animateTop;
+  animation-duration: 0.4s
+}
+body .modal {
+	align-items: baseline;
+	width: 100%;
+}
+
+/* Add Animation */
+@keyframes animateTop {
+	0% {
+		top: -300px;
+		opacity: 0
+	}
+  100% {
+		top: 0;
+		opacity: 1
+	}
+}
+
+/* The Close Button */
+.closeModal {
+  float: right;
+	height: 50px;
+	display: inline-flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	color: #e0e3e7;
+	font-size: 2rem;
+	font-weight: 300;
+}
+.closeModal:hover,
+.closeModal:focus {
+  text-decoration: none;
+  cursor: pointer;
+	color: #424f61; /* 95a1b7 */;
+}
+
+.modalHeader {
+	height: 50px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+  padding: 1rem;
+  background-color: #041e42;
+  color: #e0e3e7;
+	font-size: 0.9rem;
+}
+
+.modalBody {
+	display: block;
+}
+.modalBody a {
+	text-decoration: none;
+	color: #041e42;
+}
+.modalBody a:hover {
+	background-color: #424f61; /* 95a1b7 */;
+	color: #e0e3e7;
+}
+
+.modalBody a.targetDefault {
+	display: none;
+}
+
+body .modalBody a {
+	transform: none;
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding: 1rem;
+}
+
+.modalFooter {
+	height: 50px;
+	display: flex;
+	align-items: center;
+  padding: 1rem;
+  background-color: #041e42;
+  color: #e0e3e7;
+	font-size: 0.9rem;
+}
+
+.modalHeader h3,
+.modalFooter h3 {
+	pointer-events: none;
+	font-weight: normal;
+}
+
+/* Style the entire area under the navigation bar */
+body .container {
+	display: none;
+	overflow-x: hidden;
+	overflow-y: auto; /* This puts the scrollbar under the fixed header */
+	height: calc(100vh - 60px);
+	margin-top: 60px;
+}
+
+/* Style the tabs' content and make it so the navigation bar is 100% width, but the contents can be a different width */
+body .tab {
+	clear: both;
+  display: none;
+  width: 100%;
+	background-color: #424f61;
+}
+body .tabContent {
+	margin: 0 auto;
+	width: 95%;
+	padding: 1rem 1.25rem;
+	border-bottom-left-radius: 1.25rem;
+	border-bottom-right-radius: 1.25rem;
+	box-shadow: 0 0 7px #041e42;
+	color: #041e42;
+	background-color: #c0c7d0;
+}
+
+/* Style the footer info */
+.infoFooter {
+	display: flex;
+	height: 60px;
+	width: 90%;
+	margin: 0 auto;
+	justify-content: space-between;
+	background-color: transparent;
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Arimo, Arial, sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+.infoFooter div {
+	display: inline-flex;
+	align-items: center;
+	margin-right: -0.5rem;
+}
+.infoFooter div .modalButton {
+	pointer-events: none;
+}
+.infoFooter div .modalButton button {
+	pointer-events: auto;
+	margin-right: 0.5rem;
+	padding: 0;
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Arimo, Arial, sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+.infoFooter div .modalButton button i {
+	margin-right: 0.5rem;
+}
+.infoFooter h1 {
+	pointer-events: none;
+	color: #52C32F;
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+.infoFooter h1 span {
+	color: #e0e3e7;
+	font-weight: normal;
+}
+.infoFooter h2 {
+	display: none;
+}
+.infoFooter a,
+.infoFooter div .modalButton button {
+	height: auto;
+	margin-left: 1rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	color: #e0e3e7;
+	font-size: 1.25rem;
+}
+.infoFooter i {
+	color: #48AB29;
+}
+
+/* Style the horizontal line */
+hr {
+	margin: 1rem auto;
+}
+
+/* Style the normal lists back to having a left margin */
+body .tab ul li {
+	margin-left: 1rem;
+}
+
+/* Style the h3 headings */
+body .tab h3 {
+  margin-bottom: 0.75rem;
+	text-align: center;
+}
+
+/* Style the footNote class */
+.footNote {
+	margin-top: 0.5rem;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Style the captions under images */
+figcaption {
+	text-align: center;
+	font-style: italic;
+	margin-top: 0.25rem;
+	margin-bottom: 0;
+}
+
+
+
+/* Style the Home tab elements */
+
+	/* Style the welcoming pic on the Home tab */
+	#home .welcomePic {
+	  display: block;
+	  max-width: 700px;
+	  width: 100%;
+	  height: auto;
+		margin: 1rem auto;
+		border-radius: 2rem;
+		box-shadow: 0 0 3px #424f61;
+	}
+
+	/* Style the text at the bottom of the Home tab */
+	#home .textBottom {
+		display: table;
+		width: 100%;
+		margin: 0 auto;
+	}
+	#home .textRecent,
+	#home .textUpdate {
+		display: table-cell;
+		width: 50%;
+		background-color: #c0c7d0;
+	}
+	#home .textRecent {
+		border-bottom-left-radius: 1.25rem;
+	}
+	#home .textUpdate {
+		border-bottom-right-radius: 1.25rem;
+	}
+	#home .textRecent p,
+	#home .textUpdate p {
+		padding: 0.5rem;
+		background-color: #041e42;
+		color: #e0e3e7;
+		text-align: center;
+		font-weight: 500;
+	}
+	#home .textRecent ul,
+	#home .textUpdate ul {
+		padding: 0.75rem 1rem;
+	}
+	#home .textSpacer {
+		width: 1px;
+	}
+
+	/* Give the lists the same padding as the text */
+	#home ul {
+		padding: 0 1rem;
+	}
+
+
+
+/* Style the Profile tab elements */
+	/* Style the overall table on the Profile tab */
+	#profile .profileTable {
+		text-align: center;
+	}
+	#profile .profileTable th {
+		font-weight: normal;
+	}
+	#profile .profileTable i {
+		vertical-align: middle;
+		font-size: 1.25rem;
+	}
+	#profile .profileTable img {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		max-height: 440px;
+		width: auto;
+		margin: 0 -0.3rem;
+		box-shadow: 0 0 3px #041e42;
+	}
+
+	/* Style the left and right tables next to the pic */
+	#profile .aboutMe,
+	#profile .skills {
+		display: inline-block;
+		border-collapse: collapse;
+	}
+	#profile .aboutMe tr,
+	#profile .skills tr {
+		height: 40px;
+	}
+
+	/* Style the different types of rows */
+	#profile .rowTop {
+		background-color: #041e42;
+		color: #e0e3e7;
+	}
+	#profile .rowOdd {
+		background-color: #C8CBD2;
+		/* color: #e0e3e7; */
+	}
+	#profile .rowEven {
+		background-color: #a1abb8;
+	}
+
+	/* Style the icon and text columns */
+	#profile .tableIcon {
+		width: 50px;
+		min-width: 50px;
+		text-align: center;
+	}
+	#profile .tableText {
+		width: 425px;
+		min-width: 425px;
+	}
+	#profile .tableText br {
+		display: none;
+	}
+
+	/* Style the different layouts between larger and smaller displays */
+	#profile .aboutMe .tableText,
+	#profile .skillsAppear .tableText {
+		margin-right: 0.5rem;
+		text-align: left;
+	}
+	#profile .skillsDisappear .tableText {
+		margin-left: 0.5rem;
+		text-align: right;
+	}
+	#profile .skillsAppear {
+		display: none;
+	}
+
+
+
+/* Style the career tab elements */
+
+	/* Make sure all text is centered */
+	#career .career {
+		margin-bottom: 0.65rem;
+		text-align: center;
+	}
+
+	/* Style the career experiences */
+	#career .uber,
+	#career .eqt,
+	#career .halliburton {
+		display: inline-block;
+		margin: 0.125rem 0;
+		padding: 1rem;
+
+	}
+	#career .uber {
+		width: 80%;
+	}
+	#career .eqt,
+	#career .halliburton {
+		width: 40%;
+	}
+	#career .uber {
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		background-color: #000000;
+		color: #ffffff;
+		border: 2px solid #000000;
+	}
+	#career .eqt {
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		background-color: #c0c6de;
+		color: #000000;
+		border: 2px solid #031e45;
+	}
+	#career .halliburton {
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		background-color: #444c4f;
+		color: #ffffff;
+		border: 2px solid #444c4f;
+	}
+	#career .halliburton img {
+		display: block;
+		height: 1rem;
+		margin: 1rem auto 1.25rem auto;
+	}
+	#career .eqt img {
+		display: block;
+		height: 1.5rem;
+		margin: .85rem auto .9rem auto;
+	}
+	#career .uber img {
+		display: block;
+		height: 1.25rem;
+		margin: 1rem auto 1rem auto;
+	}
+	#career .eqt p,
+	#career .uber p,
+	#career .halliburton p {
+		margin-bottom: 0.75rem;
+		line-height: 1.3;
+		text-align: center;
+	}
+
+
+	/* Style the table that houses the job positions and dates */
+	#career .career table {
+		width: 100%;
+		table-layout: fixed;
+		border-collapse: collapse;
+		line-height: 1.3;
+	}
+
+	/* Style the different position and dates sections */
+	#career .jobPosition {
+		width: 50%;
+		margin: 0;
+		padding-right: 0.75rem;
+		border-right: 1px solid;
+		text-align: center;
+	}
+	#career .eqt .jobPosition {
+		border-right: 1px solid;
+		border-color: #ce0060;
+	}
+	#career .jobDates {
+		width: 50%;
+		margin: 0;
+		padding-left: 0.75rem;
+		text-align: center;
+	}
+
+	/* Hide simplified table setup unless on smaller display */
+	#career .jobBreakdownSimplified {
+		display: none;
+	}
+
+	/* Style the career references */
+	#career .references {
+		display: inline-block;
+		margin: 0 auto;
+	}
+	#career .references p {
+		display: inline-block;
+		min-width: 350px;
+		margin: 0.125rem 0;
+		padding: 1rem;
+		border: 1px solid #aaaaaa;
+		background-color: #e5eee5;
+		text-align: center;
+		line-height: 1.2;
+	}
+	#career .reference1 {
+		border-top-left-radius: 1.5rem;
+		border-bottom-left-radius: 1.5rem;
+		border-top-right-radius: 1.5rem;
+		border-bottom-right-radius: 1.5rem;
+	}
+	#career .reference4 {
+		border-top-left-radius: 1.5rem;
+		border-bottom-left-radius: 1.5rem;
+		border-top-right-radius: 1.5rem;
+		border-bottom-right-radius: 1.5rem;
+	}
+
+
+	/* Style the image resume section */
+	#career .myResume {
+		margin: -0.25rem auto 0.75rem;
+		font-size: 1rem;
+		text-align: center;
+	}
+	#career .myResume	a.targetDefault {
+		display: none;
+	}
+
+	/* Style the text resume section */
+	#career .resume {
+		width: 100%;
+		max-width: 800px;
+		padding: 2.25rem;
+		margin: 1rem auto 1.5rem;
+		border: 1px solid #aaaaaa;
+		box-shadow: 5px 5px 5px black;
+		background-color: #f2f2f2;
+		font-size: 0.92rem;
+	}
+	#career .resume li {
+    list-style-type: square;
+		padding-left: 0.25rem;
+	}
+	#career .resumeInfo {
+		display: flex;
+		justify-content: space-between;
+	}
+	#career span.show,
+	#career span.showEducation {
+		display: none;
+	}
+	#career span.rightText {
+		float: right;
+	}
+	#career h3.myName {
+		margin-bottom: 0.25rem;
+	}
+	#career .resumeSection h2 {
+		padding-bottom: 0.75rem;
+		font-size: 1rem;
+	}
+	#career .resume ul {
+		padding: 0.75rem 0.5rem;
+	}
+	#career .resume ul.lastList {
+		padding-bottom: 0;
+	}
+
+	/* Style the images and related text */
+	#career figure {
+		text-align: center;
+	}
+	#career .blowerUnit,
+	#career .facepiece {
+		height: auto;
+		margin-top: 0.5rem;
+	}
+	#career .blowerUnit {
+		width: 100%;
+		max-width: 750px;
+	}
+	#career .facepiece {
+		width: 70%;
+		max-width: 475px;
+	}
+
+
+
+/* Style the travel tab elements */
+	/* Style the hyperlinks */
+	#travel .hyperlink {
+		display: block;
+		margin-top: -0.5rem;
+		text-align: center;
+		max-width: 100%;
+	}
+	#travel .box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width:100%;
+	}
+	#travel h3.box {
+		text-align: center;
+	}
+	#travel .coverPhoto img {
+		max-height: 200px;
+		max-width: 80% !important;
+		border-radius: 1rem;
+	}
+	/* Center images and captions */
+	#travel .box img {
+		height: 3rem;
+	}
+	#travel a {
+		text-align: center;
+		max-width: 100%;
+	}
+	#travel .coverPhoto {
+		justify-content: center;
+		text-align: center;
+		max-width: 100%;
+	}
+	#travel p {
+		text-align: center;
+		color: #041e42;
+		font-size: 1rem;
+	}
+	#travel ul {
+		text-align: center;
+	}
+	#travel ul li {
+		text-align: center;
+		list-style: none;
+	}
+	#travel aside {
+		margin-bottom: 1.25rem;
+		text-align: center;
+	}
+	#travel aside button {
+		padding: 0.4rem 0.65rem;
+		border-radius: 1rem;
+		background-color: #041e42;
+		color: #e0e3e7;
+		border: 1px solid #52C32F;
+		max-width: 80%;
+		font-size: 1.0rem;
+		font-weight: bold;
+	}
+	#travel aside button:hover {
+		background-color: #52C32F;
+		color: #041e42;
+		border: 1px solid #041e42;
+	}
+	#travel iframe {
+		width: 80%;
+		height: 900px;
+		max-height:80vh;
+		align: center;
+		justify-content: center;
+		text-align: center;
+	}
+	#travel .travelGallery {
+
+	}
+	#alaskaShowHide {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#travel #alaskaTravelGallery img {
+		max-width: 80%;
+	}
+	#icelandShowHide {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#travel #icelandTravelGallery img {
+		max-width: 80%;
+	}
+	#nzShowHide {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#travel #nzTravelGallery img {
+		max-width: 80%;
+	}
+
+	#wyShowHide {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#travel #wyTravelGallery img {
+		max-width: 80%;
+	}
+
+
+/* Style the recipes tab elements */
+
+	/* Change the h3 headings */
+	#recipes h3 {
+		margin-bottom: 1rem;
+	}
