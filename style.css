@@ -192,6 +192,43 @@ footer{
     color: inherit;
     text-decoration: none;
 }
+footer ul{
+    list-style-type: none;
+    background-color: inherit;
+    color: inherit;
+    text-align: center;
+}
+footer li{
+    background-color: inherit;
+    color: inherit;
+    display: inline;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 1.25em;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+footer li:hover{
+    color: #e0e3e7;
+}
+footer a{
+    text-decoration: none;
+    background-color: inherit;
+    color: inherit;
+}
+footer i{
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+footer img{
+    height: 3em;
+    background-color: inherit;
+    color: inherit;
+}
 @media only screen and (max-width: 900px) {
     .hide{
         display: none;
