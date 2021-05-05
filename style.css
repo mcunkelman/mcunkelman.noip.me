@@ -39,8 +39,19 @@ nav{
     background-color: #041e42;
     color: #e0e3e7;
 }
+#menu .activetab{
+    background-color: #a1abb8;
+    color: #041e42;
+    border-radius: 7px;
+}
 #menu:hover{
     color: #828FA1;
+}
+#menu:hover .activetab{
+    background-color: #828FA1;
+}
+#menu .activetab:hover{
+    background-color: #e0e3e7;
 }
 #navitem{
     text-align: center;
