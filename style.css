@@ -243,4 +243,7 @@ footer img{
     .hide2{
         display: none;
     }
+    #resume img{
+        max-width: 100%;
+    }
 }
