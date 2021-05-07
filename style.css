@@ -250,11 +250,21 @@ footer img{
     }
 
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
+    nav{
+        font-size: 1.5rem;
+        height: 4rem;
+    }
+    nav li{
+        font-size: 1.5rem;
+    }
     .hide2{
         display: none;
     }
     #resume img{
         max-width: 100%;
+    }
+    #wrapper p{
+        font-size: 1.5rem;
     }
 }
