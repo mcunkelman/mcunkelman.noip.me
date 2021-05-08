@@ -119,6 +119,7 @@ nav img{
     color: #041e42;
     font-size: 1em;
     margin: 1em;
+    align-content: center;
 }
 #wrapper ul{
     background-color: inherit;
@@ -240,6 +241,386 @@ footer img{
     background-color: inherit;
     color: inherit;
 }
+
+#education{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    background-color: inherit;
+    align-content: center;
+    text-align: center;
+}
+
+#psu{
+    background-color: #002d62;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+#psu img{
+    display: block;
+    height: 3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: inherit;
+}
+#psu h1{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#psu b{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: inherit;
+}
+#psu h2{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#psu i{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#psu p{
+    color: #ffffff;
+    background-color: inherit;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+#ccac{
+    background-color: #aa182c;
+    color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+#ccac img{
+    display: block;
+    height: 3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: inherit;
+}
+#ccac h1{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#ccac b{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: inherit;
+}
+#ccac h2{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#ccac i{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#ccac p{
+    color: #ffffff;
+    background-color: inherit;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+#jobs{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    background-color: inherit;
+    align-content: center;
+    text-align: center;
+}
+
+#aurora{
+    background-color: #141b2b;
+    color: #ffffff;
+    border: 2px solid #254883;
+    border-radius: 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+#aurora img{
+    display: block;
+    height: 3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: inherit;
+}
+#aurora h1{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ef783f;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#aurora h2{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #738595;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#aurora i{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #738595;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#aurora p{
+    color: #ffffff;
+    background-color: inherit;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
+#uber{
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    margin-bottom: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+#uber img{
+    display: block;
+    height: 3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: inherit;
+}
+#uber h1{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #5eb707;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#uber h2{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #c0c0c0;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#uber i{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #c0c0c0;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#uber p{
+    color: #ffffff;
+    background-color: inherit;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+#eqt{
+    background-color: #c0c6d5;
+    color: #ffffff;
+    border: 2px solid #031e45;
+    border-radius: 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    margin-bottom: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+#eqt img{
+    display: block;
+    height: 3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: inherit;
+}
+#eqt h1{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ce0060;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#eqt h2{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #031e45;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#eqt i{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #031e45;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#eqt p{
+    color: #000000;
+    background-color: inherit;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+#halliburton{
+    background-color: #ffffff;
+    color: #cc0000;
+    border: 2px solid #cc0000;
+    border-radius: 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    margin-bottom: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+#halliburton img{
+    display: block;
+    height: 1.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: inherit;
+}
+#halliburton h1{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #282828;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#halliburton h2{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #cc0000;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#halliburton i{
+    background-color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #cc0000;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+#halliburton p{
+    color: #000000;
+    background-color: inherit;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
 @media only screen and (max-width: 900px) {
     .hide{
         display: none;
